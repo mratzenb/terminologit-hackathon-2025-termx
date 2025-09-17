@@ -1,0 +1,167 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ems-materialmethode",
+  "url": "https://termgit.elga.gv.at/ValueSet/ems-materialmethode",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.6.0.10.16"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "ems-materialmethode",
+  "title": "EMS_MaterialMethode",
+  "status": "active",
+  "date": "2024-03-25",
+  "description": "**Description:** Concepts for EMS methods for specimen extractions\n\n**Beschreibung:** Konzepte f\u00fcr Methode der Materialgewinnung",
+  "compose": {
+    "include": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "concept": [
+          {
+            "code": "HIST",
+            "display": "Methode Material Histologie"
+          },
+          {
+            "code": "KULTUR",
+            "display": "Methode Kultur Material"
+          },
+          {
+            "code": "MAT1",
+            "display": "Primary Sample"
+          },
+          {
+            "code": "MAT2",
+            "display": "Secondary Sample"
+          },
+          {
+            "code": "MIKRO",
+            "display": "Methode Mikroskopie Material"
+          },
+          {
+            "code": "NAT",
+            "display": "Methode NAT Material"
+          },
+          {
+            "code": "SERO",
+            "display": "Methode Material Serologie"
+          },
+          {
+            "code": "VIRUS",
+            "display": "Methode Material Virusnachweis"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2024-03-25T06:36:54+00:00",
+    "contains": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "HIST",
+        "display": "Methode Material Histologie"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "KULTUR",
+        "display": "Methode Kultur Material"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "MAT1",
+        "display": "Primary Sample"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "MAT2",
+        "display": "Secondary Sample"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "MIKRO",
+        "display": "Methode Mikroskopie Material"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "NAT",
+        "display": "Methode NAT Material"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "SERO",
+        "display": "Methode Material Serologie"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.2.40.0.34.5.99"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+        "version": "1.0.0+20230131",
+        "code": "VIRUS",
+        "display": "Methode Material Virusnachweis"
+      }
+    ]
+  }
+}

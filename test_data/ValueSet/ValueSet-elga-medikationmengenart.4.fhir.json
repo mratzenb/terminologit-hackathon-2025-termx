@@ -1,0 +1,5841 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elga-medikationmengenart",
+  "url": "https://termgit.elga.gv.at/ValueSet/elga-medikationmengenart",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.10.32"
+    }
+  ],
+  "version": "2.2.1",
+  "name": "elga-medikationmengenart",
+  "title": "ELGA_MedikationMengenart",
+  "status": "active",
+  "date": "2025-04-01",
+  "description": "**Description:** ELGA ValueSet for units of measure in e-Medikation\n\n**Beschreibung:** ELGA ValueSet f\u00fcr Mengenarten in der e-Medikation. HAFTUNG UND NUTZUNGSBESTIMMUNGEN     Die AGES stellt mit gro\u00dfer Sorgfalt Informationen zu Arzneispezialit\u00e4ten der  ELGA-Ma\u00dfnahme 'e-Medikation'  (Paragraph 16a GTelG 2012 idgF) und eImpfass zur Verf\u00fcgung.     Trotz gr\u00f6\u00dftm\u00f6glicher Sorgfalt k\u00f6nnen Fehler dennoch nicht g\u00e4nzlich ausgeschlossen werden.      Sollten beispielsweise Widerspr\u00fcche hinsichtlich der der Arzneispezialit\u00e4t beiliegenden Fach- bzw. Gebrauchsinformation      und den Informationen auf den Inhalten des Terminologieservers bestehen, gilt der Inhalt der jeweiligen Fach- bzw. Gebrauchsinformation.      Bei Unterschieden zu Informationen des Warenverzeichnisses des Apothekerverlages gilt die Information des Warenverzeichnisses.     Teile der bereitgestellten Daten stammen aus Katalogen des Apothekerverlages, der EMA (European Medicines Agency),      bzw. des EDQM (European Directorate of the Quality of Medicines).      Die Weiterwendung dieser Daten unterliegen dem jeweiligen Copyright und Nutzungsbestimmungen dieser Anbieter.     Die AGES \u00fcbernimmt keine Haftung f\u00fcr eventuelle unmittelbare oder mittelbare Sch\u00e4den, die durch die direkte      oder indirekte Nutzung der angebotenen Inhalte entstehen.      Sollten die angebotenen Daten und Inhalte heruntergeladen und weiterverwendet werden, so d\u00fcrfen diese inhaltlich nicht ver\u00e4ndert werden      und die Weiterverwendung erfolgt auf eigenes Risiko.     Die AGES leistet keine Gew\u00e4hr und \u00fcbernimmt auch keine Haftung f\u00fcr eine gewisse Datenqualit\u00e4t extern bereitgestellter Inhalte,      f\u00fcr die Beschaffenheit der erstellten Datens\u00e4tze und/oder Codesysteme, sowie f\u00fcr die Verwertbarkeit      und/oder Nutzung der zur Verf\u00fcgung gestellten Daten, sofern ihr dessen Mangelhaftigkeit trotz Einhaltung aller Sorgfaltspflichten      und der Anwendung technischer Standards nicht erkennbar waren, respektive sein konnten.",
+  "compose": {
+    "inactive": true,
+    "include": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "concept": [
+          {
+            "code": "%",
+            "display": "Percent",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Prozent"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "%"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "%"
+              }
+            ]
+          },
+          {
+            "code": "/d",
+            "display": "PerDay",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Tag"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/d"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/d"
+              }
+            ]
+          },
+          {
+            "code": "/g",
+            "display": "PerGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Gramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/g"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/g"
+              }
+            ]
+          },
+          {
+            "code": "/h",
+            "display": "PerHour",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Stunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/h"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/h"
+              }
+            ]
+          },
+          {
+            "code": "/kg",
+            "display": "PerKiloGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Kilogramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/kg"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/kg"
+              }
+            ]
+          },
+          {
+            "code": "/kg{body`wt}",
+            "display": "PerKiloGramBodyWeight",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Kilogramm K\u00f6rpergewicht"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/kg{body`wt}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/kg K\u00f6rpergewicht"
+              }
+            ]
+          },
+          {
+            "code": "/min",
+            "display": "PerMinute",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Minute"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/min"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/min"
+              }
+            ]
+          },
+          {
+            "code": "/s",
+            "display": "PerSecond",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "pro Sekunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "/s"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "/s"
+              }
+            ]
+          },
+          {
+            "code": "1",
+            "display": "Unit",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Einheit"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "1"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Einheit(en)"
+              }
+            ]
+          },
+          {
+            "code": "10*6[iU]",
+            "display": "MillionInternationalUnits",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Millionen Internationale Einheiten"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "10*6[iU]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "10^6 IE"
+              }
+            ]
+          },
+          {
+            "code": "Cel",
+            "display": "DegreesCelsius",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Grad Celsius"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "Cel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "C"
+              }
+            ]
+          },
+          {
+            "code": "GBq",
+            "display": "GBq",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "GigaBecquerel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "GBq"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "GBq"
+              }
+            ]
+          },
+          {
+            "code": "J",
+            "display": "Joule",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "J"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "J"
+              }
+            ]
+          },
+          {
+            "code": "L",
+            "display": "Liter",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "l"
+              }
+            ]
+          },
+          {
+            "code": "L/s",
+            "display": "LitersPerSecond",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Liter pro Sekunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "L/s"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "l/s"
+              }
+            ]
+          },
+          {
+            "code": "[iU]",
+            "display": "InternationalUnit",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Internationale Einheiten"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "[iU]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "IE"
+              }
+            ]
+          },
+          {
+            "code": "[iU]/g",
+            "display": "InternationalUnitsPerGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Internationale Einheiten pro Gramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "[iU]/g"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "IE/g"
+              }
+            ]
+          },
+          {
+            "code": "[iU]/m2",
+            "display": "InternationalUnitsPerSquareMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Internationale Einheiten pro Quadratmeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "[iU]/m2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "IE/m2"
+              }
+            ]
+          },
+          {
+            "code": "[iU]/mL",
+            "display": "InternationalUnitsPerMilliLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Internationale Einheiten pro Milliliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "[iU]/mL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "IE/ml"
+              }
+            ]
+          },
+          {
+            "code": "[iU]/{Broteinheiten}",
+            "display": "IE/BE",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Internationale Einheite(n) pro Broteinheit(en)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "[iU]/{Broteinheiten}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "IE/BE"
+              }
+            ]
+          },
+          {
+            "code": "[pH]",
+            "display": "pH",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "[pH]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "pH"
+              }
+            ]
+          },
+          {
+            "code": "a",
+            "display": "Year",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Jahr"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "a"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Jahr"
+              }
+            ]
+          },
+          {
+            "code": "bar",
+            "display": "Bar",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "bar"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Bar"
+              }
+            ]
+          },
+          {
+            "code": "cal",
+            "display": "Calorie",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kalorie"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cal"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cal"
+              }
+            ]
+          },
+          {
+            "code": "cal/d",
+            "display": "CaloriesPerDay",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kalorien pro Tag"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cal/d"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cal/d"
+              }
+            ]
+          },
+          {
+            "code": "cal/g",
+            "display": "CaloriesPerGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kalorien pro Gramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cal/g"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cal/g"
+              }
+            ]
+          },
+          {
+            "code": "cal/h",
+            "display": "CaloriesPerHour",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kalorien pro Stunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cal/h"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cal/h"
+              }
+            ]
+          },
+          {
+            "code": "cal/mL",
+            "display": "CaloriesPerMiliLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kalorien pro Milliliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cal/mL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cal/ml"
+              }
+            ]
+          },
+          {
+            "code": "cm",
+            "display": "CentiMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Zentimeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cm"
+              }
+            ]
+          },
+          {
+            "code": "cm2",
+            "display": "SquareCentiMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Quadratzentimeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cm2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cm2"
+              }
+            ]
+          },
+          {
+            "code": "cm3",
+            "display": "CubicCentimeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kubikzentimeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "cm3"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "cm3"
+              }
+            ]
+          },
+          {
+            "code": "d",
+            "display": "Day",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tag"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "d"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "d"
+              }
+            ]
+          },
+          {
+            "code": "g",
+            "display": "Gram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Gramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "g"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "g"
+              }
+            ]
+          },
+          {
+            "code": "g/L",
+            "display": "GramsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Gramm pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "g/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "g/l"
+              }
+            ]
+          },
+          {
+            "code": "g/kg",
+            "display": "GramsPerKiloGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Gramm pro Kilogramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "g/kg"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "g/kg"
+              }
+            ]
+          },
+          {
+            "code": "g/m2",
+            "display": "GramsPerSquareMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Gramm pro Quadratmeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "g/m2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "g/m2"
+              }
+            ]
+          },
+          {
+            "code": "g/mL",
+            "display": "GramsPerMilliLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Gramm pro Milliliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "g/mL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "g/ml"
+              }
+            ]
+          },
+          {
+            "code": "h",
+            "display": "Hour",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Stunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "h"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "h"
+              }
+            ]
+          },
+          {
+            "code": "kJ",
+            "display": "KiloJoule",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kJ"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kJ"
+              }
+            ]
+          },
+          {
+            "code": "kPa",
+            "display": "KiloPascal",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilopascal"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kPa"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kPa"
+              }
+            ]
+          },
+          {
+            "code": "k[iU]",
+            "display": "KiloInternationalUnits",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tausend Internationale Einheiten"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "k[iU]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kIE"
+              }
+            ]
+          },
+          {
+            "code": "k[iU]/L",
+            "display": "KiloInternationalUnitsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tausend Internationale Einheiten pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "k[iU]/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kIE/l"
+              }
+            ]
+          },
+          {
+            "code": "kat",
+            "display": "Katal",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kat"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kat"
+              }
+            ]
+          },
+          {
+            "code": "kcal",
+            "display": "KiloCalorie",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kcal"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kcal"
+              }
+            ]
+          },
+          {
+            "code": "kcal/d",
+            "display": "KiloCaloriesPerDay",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilokalorien pro Tag"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kcal/d"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kcal/d"
+              }
+            ]
+          },
+          {
+            "code": "kcal/g",
+            "display": "KiloCaloriesPerGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilokalorien pro Gramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kcal/g"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kcal/g"
+              }
+            ]
+          },
+          {
+            "code": "kcal/h",
+            "display": "KiloCaloriesPerHour",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilokalorien pro Stunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kcal/h"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kcal/h"
+              }
+            ]
+          },
+          {
+            "code": "kcal/mL",
+            "display": "KiloCaloriesPerMililiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilokalorien pro Milliliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kcal/mL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kcal/ml"
+              }
+            ]
+          },
+          {
+            "code": "kg",
+            "display": "KiloGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilogramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kg"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kg"
+              }
+            ]
+          },
+          {
+            "code": "kg/m2",
+            "display": "KiloGramsPerSquareMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilogramm pro Quadratmeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kg/m2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kg/m2"
+              }
+            ]
+          },
+          {
+            "code": "kg/m3",
+            "display": "KiloGramsPerCubicMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kilogramm pro Kubikmeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "kg/m3"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "kg/m3"
+              }
+            ]
+          },
+          {
+            "code": "m",
+            "display": "Meter",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "m"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "m"
+              }
+            ]
+          },
+          {
+            "code": "m2",
+            "display": "SquareMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Quadratmeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "m2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "m2"
+              }
+            ]
+          },
+          {
+            "code": "mL",
+            "display": "MilliLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Milliliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mL"
+              }
+            ]
+          },
+          {
+            "code": "mL/s",
+            "display": "MilliLitersPerSecond",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Milliliter pro Sekunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mL/s"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "ml/s"
+              }
+            ]
+          },
+          {
+            "code": "m[iU]",
+            "display": "MilliInternationalUnit",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tausendstel Internationale Einheiten"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "m[iU]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mIE"
+              }
+            ]
+          },
+          {
+            "code": "m[iU]/L",
+            "display": "MilliInternationalUnitsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tausendstel Internationale Einheiten pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "m[iU]/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mIE/l"
+              }
+            ]
+          },
+          {
+            "code": "mbar",
+            "display": "MilliBar",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mbar"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mbar"
+              }
+            ]
+          },
+          {
+            "code": "mg",
+            "display": "MilliGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Milligramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mg"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mg"
+              }
+            ]
+          },
+          {
+            "code": "mg/L",
+            "display": "MilliGramsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Milligramm pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mg/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mg/l"
+              }
+            ]
+          },
+          {
+            "code": "mg/m2",
+            "display": "MilliGramsPerSquareMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Milligramm pro Quadratmeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mg/m2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mg/m2"
+              }
+            ]
+          },
+          {
+            "code": "min",
+            "display": "Minute",
+            "designation": [
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "min"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "min"
+              }
+            ]
+          },
+          {
+            "code": "mm",
+            "display": "MilliMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Millimeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mm"
+              }
+            ]
+          },
+          {
+            "code": "mm2",
+            "display": "SquareMilliMeter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Quadratmillimeter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mm2"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mm2"
+              }
+            ]
+          },
+          {
+            "code": "mm[Hg]",
+            "display": "MilliMetersOfMercury",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "mmHg"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mm[Hg]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mm Hg"
+              }
+            ]
+          },
+          {
+            "code": "mmol",
+            "display": "MilliMole",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Millimol"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mmol"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mmol"
+              }
+            ]
+          },
+          {
+            "code": "mmol/L",
+            "display": "MilliMolesPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Millimol pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mmol/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mmol/l"
+              }
+            ]
+          },
+          {
+            "code": "mo",
+            "display": "Month",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Monat"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mo"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mo"
+              }
+            ]
+          },
+          {
+            "code": "mol/L",
+            "display": "MolesPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mol pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "mol/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "mol/l"
+              }
+            ]
+          },
+          {
+            "code": "ng",
+            "display": "NanoGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Nanogramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ng"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "ng"
+              }
+            ]
+          },
+          {
+            "code": "ng/L",
+            "display": "NanoGramsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Nanogramm pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ng/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "ng/l"
+              }
+            ]
+          },
+          {
+            "code": "nmol/L",
+            "display": "NanoMolesPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Nanomol pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "nmol/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "nmol/l"
+              }
+            ]
+          },
+          {
+            "code": "s",
+            "display": "Second",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Sekunde"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "s"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "s"
+              }
+            ]
+          },
+          {
+            "code": "uL",
+            "display": "MicroLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikroliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "uL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5l"
+              }
+            ]
+          },
+          {
+            "code": "ug",
+            "display": "MicroGram",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikrogramm"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ug"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5g"
+              }
+            ]
+          },
+          {
+            "code": "ug/(kg.min)",
+            "display": "MicroGramsPerKiloGramAndMinute",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikrogramm pro Kilogramm und Minute"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ug/(kg.min)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5g/(kg*min)"
+              }
+            ]
+          },
+          {
+            "code": "ug/L",
+            "display": "MicroGramsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikrogramm pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ug/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5g/l"
+              }
+            ]
+          },
+          {
+            "code": "ukat",
+            "display": "MicroKatal",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikrokatal"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ukat"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5kat"
+              }
+            ]
+          },
+          {
+            "code": "ukat/L",
+            "display": "MicroKatalsPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikrokatal pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ukat/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5kat/l"
+              }
+            ]
+          },
+          {
+            "code": "ukat/mL",
+            "display": "MicroKatalsPerMilliLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikrokatal pro Milliliter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "ukat/mL"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5kat/ml"
+              }
+            ]
+          },
+          {
+            "code": "umol",
+            "display": "MicroMole",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikromol"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "umol"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5mol"
+              }
+            ]
+          },
+          {
+            "code": "umol/L",
+            "display": "MicroMolesPerLiter",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Mikromol pro Liter"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "umol/L"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "\u00b5mol/l"
+              }
+            ]
+          },
+          {
+            "code": "wk",
+            "display": "Week",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Woche(n)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "wk"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Woche(n)"
+              }
+            ]
+          },
+          {
+            "code": "{Ampulle}",
+            "display": "Ampoule",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Ampulle(n)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Ampulle}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Ampulle(n)"
+              }
+            ]
+          },
+          {
+            "code": "{Beutel/Aufgussbeutel}",
+            "display": "Pouch",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Beutel/Aufgussbeutel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Beutel/Aufgussbeutel}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Beutel/Aufgussbeutel"
+              }
+            ]
+          },
+          {
+            "code": "{Broteinheiten}",
+            "display": "Bread unit",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Broteinheit(en)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Broteinheiten}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Broteinheit(en)"
+              }
+            ]
+          },
+          {
+            "code": "{Essloeffel}",
+            "display": "Tablespoon",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Essl\u00f6ffel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Essloeffel}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Essl\u00f6ffel"
+              }
+            ]
+          },
+          {
+            "code": "{Flaschen}",
+            "display": "Bottle",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Flasche(n)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Flaschen}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Flasche(n)"
+              }
+            ]
+          },
+          {
+            "code": "{Globuli}",
+            "display": "Pillule",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Globuli"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Globuli}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Globuli"
+              }
+            ]
+          },
+          {
+            "code": "{Hub}",
+            "display": "Actuation",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Hub/H\u00fcbe"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Hub}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Hub/H\u00fcbe"
+              }
+            ]
+          },
+          {
+            "code": "{Messloeffel}",
+            "display": "Spoonful",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Messl\u00f6ffel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Messloeffel}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Messl\u00f6ffel"
+              }
+            ]
+          },
+          {
+            "code": "{Packungsbeutel}",
+            "display": "Packing bag",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Packungsbeutel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Packungsbeutel}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Packungsbeutel"
+              }
+            ]
+          },
+          {
+            "code": "{Packung}",
+            "display": "Container",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Packung(en)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Packung}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Packung(en)"
+              }
+            ]
+          },
+          {
+            "code": "{Stueck}",
+            "display": "Piece",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "St\u00fcck"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Stueck}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "St\u00fcck"
+              }
+            ]
+          },
+          {
+            "code": "{Teeloeffel}",
+            "display": "Teaspoon",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Teel\u00f6ffel"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Teeloeffel}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Teel\u00f6ffel"
+              }
+            ]
+          },
+          {
+            "code": "{Tropfen}",
+            "display": "Drop",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tropfen"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{Tropfen}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Tropfen"
+              }
+            ]
+          },
+          {
+            "code": "{TAB}",
+            "display": "Tablet",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Tablette(n)"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "{TAB}"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "Tablette(n)"
+              }
+            ]
+          },
+          {
+            "code": "10*6.[iU]",
+            "display": "MillionInternationalUnits",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Million(en) Internationale Einheiten"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_codiert",
+                  "display": "einheit_codiert"
+                },
+                "value": "10*6.[iU]"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "einheit_print",
+                  "display": "einheit_print"
+                },
+                "value": "10^6 IE"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2025-04-01T11:28:54+00:00",
+    "contains": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "%",
+        "display": "Percent",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Prozent"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "%"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "%"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/d",
+        "display": "PerDay",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Tag"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/d"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/d"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/g",
+        "display": "PerGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Gramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/g"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/g"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/h",
+        "display": "PerHour",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Stunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/h"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/h"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/kg",
+        "display": "PerKiloGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Kilogramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/kg"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/kg"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/kg{body`wt}",
+        "display": "PerKiloGramBodyWeight",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Kilogramm K\u00f6rpergewicht"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/kg{body`wt}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/kg K\u00f6rpergewicht"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/min",
+        "display": "PerMinute",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Minute"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/min"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/min"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "/s",
+        "display": "PerSecond",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "pro Sekunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "/s"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "/s"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "1",
+        "display": "Unit",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Einheit"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "1"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Einheit(en)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "inactive": true,
+        "version": "2.2",
+        "code": "10*6[iU]",
+        "display": "MillionInternationalUnits",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Millionen Internationale Einheiten"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "10*6[iU]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "10^6 IE"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "Cel",
+        "display": "DegreesCelsius",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Grad Celsius"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "Cel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "C"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "GBq",
+        "display": "GBq",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "GigaBecquerel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "GBq"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "GBq"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "J",
+        "display": "Joule",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "J"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "J"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "L",
+        "display": "Liter",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "L/s",
+        "display": "LitersPerSecond",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Liter pro Sekunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "L/s"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "l/s"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "[iU]",
+        "display": "InternationalUnit",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Internationale Einheiten"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "[iU]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "IE"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "[iU]/g",
+        "display": "InternationalUnitsPerGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Internationale Einheiten pro Gramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "[iU]/g"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "IE/g"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "[iU]/m2",
+        "display": "InternationalUnitsPerSquareMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Internationale Einheiten pro Quadratmeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "[iU]/m2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "IE/m2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "[iU]/mL",
+        "display": "InternationalUnitsPerMilliLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Internationale Einheiten pro Milliliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "[iU]/mL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "IE/ml"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "[iU]/{Broteinheiten}",
+        "display": "IE/BE",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Internationale Einheite(n) pro Broteinheit(en)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "[iU]/{Broteinheiten}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "IE/BE"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "[pH]",
+        "display": "pH",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "[pH]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "pH"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "a",
+        "display": "Year",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Jahr"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "a"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Jahr"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "bar",
+        "display": "Bar",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "bar"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Bar"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cal",
+        "display": "Calorie",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kalorie"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cal"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cal"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cal/d",
+        "display": "CaloriesPerDay",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kalorien pro Tag"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cal/d"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cal/d"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cal/g",
+        "display": "CaloriesPerGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kalorien pro Gramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cal/g"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cal/g"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cal/h",
+        "display": "CaloriesPerHour",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kalorien pro Stunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cal/h"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cal/h"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cal/mL",
+        "display": "CaloriesPerMiliLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kalorien pro Milliliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cal/mL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cal/ml"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cm",
+        "display": "CentiMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Zentimeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cm"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cm2",
+        "display": "SquareCentiMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Quadratzentimeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cm2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cm2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "cm3",
+        "display": "CubicCentimeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kubikzentimeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "cm3"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "cm3"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "d",
+        "display": "Day",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tag"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "d"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "d"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "g",
+        "display": "Gram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Gramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "g"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "g"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "g/L",
+        "display": "GramsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Gramm pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "g/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "g/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "g/kg",
+        "display": "GramsPerKiloGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Gramm pro Kilogramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "g/kg"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "g/kg"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "g/m2",
+        "display": "GramsPerSquareMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Gramm pro Quadratmeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "g/m2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "g/m2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "g/mL",
+        "display": "GramsPerMilliLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Gramm pro Milliliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "g/mL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "g/ml"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "h",
+        "display": "Hour",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Stunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "h"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "h"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kJ",
+        "display": "KiloJoule",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kJ"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kJ"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kPa",
+        "display": "KiloPascal",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilopascal"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kPa"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kPa"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "k[iU]",
+        "display": "KiloInternationalUnits",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tausend Internationale Einheiten"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "k[iU]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kIE"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "k[iU]/L",
+        "display": "KiloInternationalUnitsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tausend Internationale Einheiten pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "k[iU]/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kIE/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kat",
+        "display": "Katal",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kat"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kat"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kcal",
+        "display": "KiloCalorie",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kcal"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kcal"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kcal/d",
+        "display": "KiloCaloriesPerDay",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilokalorien pro Tag"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kcal/d"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kcal/d"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kcal/g",
+        "display": "KiloCaloriesPerGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilokalorien pro Gramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kcal/g"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kcal/g"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kcal/h",
+        "display": "KiloCaloriesPerHour",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilokalorien pro Stunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kcal/h"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kcal/h"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kcal/mL",
+        "display": "KiloCaloriesPerMililiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilokalorien pro Milliliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kcal/mL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kcal/ml"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kg",
+        "display": "KiloGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilogramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kg"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kg"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kg/m2",
+        "display": "KiloGramsPerSquareMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilogramm pro Quadratmeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kg/m2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kg/m2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "kg/m3",
+        "display": "KiloGramsPerCubicMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kilogramm pro Kubikmeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "kg/m3"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "kg/m3"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "m",
+        "display": "Meter",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "m"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "m"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "m2",
+        "display": "SquareMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Quadratmeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "m2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "m2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mL",
+        "display": "MilliLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Milliliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mL"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mL/s",
+        "display": "MilliLitersPerSecond",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Milliliter pro Sekunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mL/s"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "ml/s"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "m[iU]",
+        "display": "MilliInternationalUnit",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tausendstel Internationale Einheiten"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "m[iU]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mIE"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "m[iU]/L",
+        "display": "MilliInternationalUnitsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tausendstel Internationale Einheiten pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "m[iU]/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mIE/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mbar",
+        "display": "MilliBar",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mbar"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mbar"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mg",
+        "display": "MilliGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Milligramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mg"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mg"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mg/L",
+        "display": "MilliGramsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Milligramm pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mg/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mg/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mg/m2",
+        "display": "MilliGramsPerSquareMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Milligramm pro Quadratmeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mg/m2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mg/m2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "min",
+        "display": "Minute",
+        "designation": [
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "min"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "min"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mm",
+        "display": "MilliMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Millimeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mm"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mm2",
+        "display": "SquareMilliMeter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Quadratmillimeter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mm2"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mm2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mm[Hg]",
+        "display": "MilliMetersOfMercury",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "mmHg"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mm[Hg]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mm Hg"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mmol",
+        "display": "MilliMole",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Millimol"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mmol"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mmol"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mmol/L",
+        "display": "MilliMolesPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Millimol pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mmol/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mmol/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mo",
+        "display": "Month",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Monat"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mo"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mo"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "mol/L",
+        "display": "MolesPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mol pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "mol/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "mol/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ng",
+        "display": "NanoGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Nanogramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ng"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "ng"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ng/L",
+        "display": "NanoGramsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Nanogramm pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ng/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "ng/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "nmol/L",
+        "display": "NanoMolesPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Nanomol pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "nmol/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "nmol/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "s",
+        "display": "Second",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Sekunde"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "s"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "s"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "uL",
+        "display": "MicroLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikroliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "uL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ug",
+        "display": "MicroGram",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikrogramm"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ug"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5g"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ug/(kg.min)",
+        "display": "MicroGramsPerKiloGramAndMinute",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikrogramm pro Kilogramm und Minute"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ug/(kg.min)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5g/(kg*min)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ug/L",
+        "display": "MicroGramsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikrogramm pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ug/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5g/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ukat",
+        "display": "MicroKatal",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikrokatal"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ukat"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5kat"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ukat/L",
+        "display": "MicroKatalsPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikrokatal pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ukat/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5kat/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "ukat/mL",
+        "display": "MicroKatalsPerMilliLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikrokatal pro Milliliter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "ukat/mL"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5kat/ml"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "umol",
+        "display": "MicroMole",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikromol"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "umol"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5mol"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "umol/L",
+        "display": "MicroMolesPerLiter",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Mikromol pro Liter"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "umol/L"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "\u00b5mol/l"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "wk",
+        "display": "Week",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Woche(n)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "wk"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Woche(n)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Ampulle}",
+        "display": "Ampoule",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Ampulle(n)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Ampulle}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Ampulle(n)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Beutel/Aufgussbeutel}",
+        "display": "Pouch",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Beutel/Aufgussbeutel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Beutel/Aufgussbeutel}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Beutel/Aufgussbeutel"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Broteinheiten}",
+        "display": "Bread unit",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Broteinheit(en)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Broteinheiten}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Broteinheit(en)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Essloeffel}",
+        "display": "Tablespoon",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Essl\u00f6ffel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Essloeffel}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Essl\u00f6ffel"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Flaschen}",
+        "display": "Bottle",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Flasche(n)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Flaschen}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Flasche(n)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Globuli}",
+        "display": "Pillule",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Globuli"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Globuli}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Globuli"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Hub}",
+        "display": "Actuation",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Hub/H\u00fcbe"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Hub}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Hub/H\u00fcbe"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Messloeffel}",
+        "display": "Spoonful",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Messl\u00f6ffel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Messloeffel}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Messl\u00f6ffel"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Packungsbeutel}",
+        "display": "Packing bag",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Packungsbeutel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Packungsbeutel}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Packungsbeutel"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Packung}",
+        "display": "Container",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Packung(en)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Packung}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Packung(en)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Stueck}",
+        "display": "Piece",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "St\u00fcck"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Stueck}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "St\u00fcck"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Teeloeffel}",
+        "display": "Teaspoon",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Teel\u00f6ffel"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Teeloeffel}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Teel\u00f6ffel"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{Tropfen}",
+        "display": "Drop",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tropfen"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{Tropfen}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Tropfen"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "{TAB}",
+        "display": "Tablet",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Tablette(n)"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "{TAB}"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "Tablette(n)"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.8"
+          }
+        ],
+        "system": "http://unitsofmeasure.org",
+        "version": "2.2",
+        "code": "10*6.[iU]",
+        "display": "MillionInternationalUnits",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Million(en) Internationale Einheiten"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_codiert",
+              "display": "einheit_codiert"
+            },
+            "value": "10*6.[iU]"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "einheit_print",
+              "display": "einheit_print"
+            },
+            "value": "10^6 IE"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "elga-ergaenzungsliste",
+  "url": "https://termgit.elga.gv.at/CodeSystem/elga-ergaenzungsliste",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.179"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "elga-ergaenzungsliste",
+  "title": "ELGA_Ergaenzungsliste",
+  "status": "active",
+  "date": "2018-06-21",
+  "description": "**Description:** Supplemental code list for codes needed in ELGA value sets\n\n**Beschreibung:** Sammel-Codeliste von Konzepten, die als Erg\u00e4nzung in ELGA-Value-Sets ben\u00f6tigt werden",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "Refna",
+      "display": "Referenzbereich nicht anwendbar",
+      "definition": "Erg\u00e4nzung der ObservationInterpretation Codes f\u00fcr den Fall, dass ein Referenzbereich nicht anwendbar ist"
+    }
+  ]
+}

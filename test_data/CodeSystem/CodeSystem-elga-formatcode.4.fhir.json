@@ -1,0 +1,621 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "elga-formatcode",
+  "url": "https://termgit.elga.gv.at/CodeSystem/elga-formatcode",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.37"
+    }
+  ],
+  "version": "1.8.0",
+  "name": "elga-formatcode",
+  "title": "ELGA_FormatCode",
+  "status": "active",
+  "date": "2025-06-16",
+  "publisher": "ELGA GmbH",
+  "contact": [
+    {
+      "name": "https://www.elga.gv.at",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.elga.gv.at"
+        }
+      ]
+    }
+  ],
+  "description": "**Description:** Allowed values for the FormatCode in the XDS-Matadata, within ELGA. In case of an ELGA CDA document with the interoperability level ''Enhanced'' or ''Full Support'' and additionally containing self-defined machine readable elements, this needs to be labeled using ''+'' (Plus-Sign) within the Formatcode. E.g.: ''urn:elga:dissum:2013:EIS_FullSupport+''\n\n**Beschreibung:** Zur Verwendung in ELGA erlaubte Werte f\u00fcr den FormatCode in den XDS-Metadaten. Liegt ein CDA Dokument in ELGA Interoperabilit\u00e4tsstufe ''Enhanced'' oder ''Full Support'' vor und enth\u00e4lt das Dokument zus\u00e4tzliche selbst-definierte maschinenlesbare Elemente, so ist dies durch ein ''+'' (Plus-Zeichen) als Zusatz im Formatcode gekennzeichnet werden. ZB: ''urn:elga:dissum:2013:EIS_FullSupport+''",
+  "content": "complete",
+  "count": 106,
+  "property": [
+    {
+      "code": "hints",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "urn:elga:2011:EIS_Basic",
+      "display": "ELGA Dokument"
+    },
+    {
+      "code": "urn:elga:2013:EIS_Basic",
+      "display": "ELGA Dokument"
+    },
+    {
+      "code": "urn:elga:2014:EIS_Basic",
+      "display": "ELGA Dokument",
+      "definition": "CDA Dokument entsprechend den Vorgaben des Allgemeinen Implementierungsleitfadens f\u00fcr ELGA Dokumente (EIS Basic)"
+    },
+    {
+      "code": "urn:elga:2015-v2.06:EIS_Basic",
+      "display": "ELGA Dokument v2.06",
+      "definition": "CDA Dokument entsprechend den Vorgaben des Allgemeinen Implementierungsleitfadens f\u00fcr ELGA Dokumente (EIS Basic) v2-06"
+    },
+    {
+      "code": "urn:elga:2015:EIS_Basic",
+      "display": "ELGA Dokument",
+      "definition": "CDA Dokument entsprechend den Vorgaben des Allgemeinen Implementierungsleitfadens f\u00fcr ELGA Dokumente (EIS Basic)"
+    },
+    {
+      "code": "urn:elga:2016-v2.06.1:EIS_Basic",
+      "display": "ELGA Dokument v2.06.1",
+      "definition": "CDA Dokument entsprechend den Vorgaben des Allgemeinen Implementierungsleitfadens f\u00fcr ELGA Dokumente (EIS Basic) v2-06.1",
+      "designation": [
+        {
+          "language": "de-AT",
+          "value": "ELGA Dokument v2.06"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:2017-v2.06.2:EIS_Basic",
+      "display": "ELGA Dokument v2.06.2",
+      "definition": "CDA Dokument entsprechend den Vorgaben des Allgemeinen Implementierungsleitfadens f\u00fcr ELGA Dokumente (EIS Basic) v2-06.2",
+      "designation": [
+        {
+          "language": "de-AT",
+          "value": "ELGA Dokument v2.06"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:bppc:2024:cda",
+      "display": "Willenserkl\u00e4rung im Berechtigungssystem, CDA-Format",
+      "definition": "Technisches Dokument gem\u00e4\u00df IHE-Profil BPPC (Basic Patient Privacy Consents)"
+    },
+    {
+      "code": "urn:elga:bppc:2024:pdf",
+      "display": "Willenserkl\u00e4rung im Berechtigungssystem, PDF-Format",
+      "definition": "Technisches Dokument gem\u00e4\u00df IHE-Profil BPPC (Basic Patient Privacy Consents)"
+    },
+    {
+      "code": "urn:elga:dissum-n:2014:EIS_Basic",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum-n:2014:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:dissum-n:2014:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:dissum-n:2015-v2.06:EIS_Basic",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Basic v2.06",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum-n:2015-v2.06:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Enhanced v2.06"
+    },
+    {
+      "code": "urn:elga:dissum-n:2015-v2.06:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Full Support v2.06"
+    },
+    {
+      "code": "urn:elga:dissum-n:2015:EIS_Basic",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum-n:2015:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:dissum-n:2015:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:dissum-n:2017-v2.06.2:EIS_Basic",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Basic v2.06.2",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum-n:2017-v2.06.2:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Enhanced v2.06.2"
+    },
+    {
+      "code": "urn:elga:dissum-n:2017-v2.06.2:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief Pflege, EIS Full Support v2.06.2"
+    },
+    {
+      "code": "urn:elga:dissum:2011:EIS_Basic",
+      "display": "ELGA Entlassungsbrief",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum:2011:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief"
+    },
+    {
+      "code": "urn:elga:dissum:2011:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief"
+    },
+    {
+      "code": "urn:elga:dissum:2013:EIS_Basic",
+      "display": "ELGA Entlassungsbrief",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum:2013:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief"
+    },
+    {
+      "code": "urn:elga:dissum:2013:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief"
+    },
+    {
+      "code": "urn:elga:dissum:2014:EIS_Basic",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum:2014:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:dissum:2014:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:dissum:2015-v2.06:EIS_Basic",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Basic v2.06",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum:2015-v2.06:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Enhanced v2.06"
+    },
+    {
+      "code": "urn:elga:dissum:2015-v2.06:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Full Support v2.06"
+    },
+    {
+      "code": "urn:elga:dissum:2015:EIS_Basic",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum:2015:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:dissum:2015:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:dissum:2017-v2.06.2:EIS_Basic",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Basic v2.06.2",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:dissum:2017-v2.06.2:EIS_Enhanced",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Enhanced v2.06.2"
+    },
+    {
+      "code": "urn:elga:dissum:2017-v2.06.2:EIS_FullSupport",
+      "display": "ELGA Entlassungsbrief \u00c4rztlich, EIS Full Support v2.06.2"
+    },
+    {
+      "code": "urn:elga:emedat:2014:EIS_FullSupport",
+      "display": "ELGA e-Medikation, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:emedat:2015",
+      "display": "ELGA e-Medikation",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "CDA f\u00fcr eMedikation sind nur in EIS Full Support zul\u00e4ssig"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:emedat:2015-v2.06",
+      "display": "ELGA e-Medikation v2.06"
+    },
+    {
+      "code": "urn:elga:lab:2011:EIS_Basic",
+      "display": "ELGA Befundbericht Labor",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:lab:2011:EIS_Enhanced",
+      "display": "ELGA Befundbericht Labor"
+    },
+    {
+      "code": "urn:elga:lab:2011:EIS_FullSupport",
+      "display": "ELGA Befundbericht Labor"
+    },
+    {
+      "code": "urn:elga:lab:2013:EIS_Basic",
+      "display": "ELGA Befundbericht Labor",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:lab:2013:EIS_Enhanced",
+      "display": "ELGA Befundbericht Labor"
+    },
+    {
+      "code": "urn:elga:lab:2013:EIS_FullSupport",
+      "display": "ELGA Befundbericht Labor"
+    },
+    {
+      "code": "urn:elga:lab:2014:EIS_Basic",
+      "display": "ELGA Laborbefund, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:lab:2014:EIS_Enhanced",
+      "display": "ELGA Laborbefund, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:lab:2014:EIS_FullSupport",
+      "display": "ELGA Laborbefund, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:lab:2015-v2.06:EIS_Basic",
+      "display": "ELGA Laborbefund, EIS Basic v2.06",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:lab:2015-v2.06:EIS_Enhanced",
+      "display": "ELGA Laborbefund, EIS Enhanced v2.06"
+    },
+    {
+      "code": "urn:elga:lab:2015-v2.06:EIS_FullSupport",
+      "display": "ELGA Laborbefund, EIS Full Support v2.06"
+    },
+    {
+      "code": "urn:elga:lab:2015:EIS_Basic",
+      "display": "ELGA Laborbefund, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:lab:2015:EIS_Enhanced",
+      "display": "ELGA Laborbefund, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:lab:2015:EIS_FullSupport",
+      "display": "ELGA Laborbefund, EIS Full Support"
+    },
+    {
+      "code": "urn:elga:lab:2017-v2.06.2:EIS_Basic",
+      "display": "ELGA Laborbefund, EIS Basic v2.06.2",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:lab:2017-v2.06.2:EIS_Enhanced",
+      "display": "ELGA Laborbefund, EIS Enhanced v2.06.2"
+    },
+    {
+      "code": "urn:elga:lab:2017-v2.06.2:EIS_FullSupport",
+      "display": "ELGA Laborbefund, EIS Full Support v2.06.2"
+    },
+    {
+      "code": "urn:elga:nurse-tf:2015-v2.06:EIS_Basic",
+      "display": "ELGA Pflegesituationsbericht, EIS Basic v2.06"
+    },
+    {
+      "code": "urn:elga:nurse-tf:2015-v2.06:EIS_Enhanced",
+      "display": "ELGA Pflegesituationsbericht, EIS Enhanced v2.06"
+    },
+    {
+      "code": "urn:elga:nurse-tf:2015-v2.06:EIS_FullSupport",
+      "display": "ELGA Pflegesituationsbericht, EIS Full Support v2.06"
+    },
+    {
+      "code": "urn:elga:nurse-tf:2017-v2.06.2:EIS_Basic",
+      "display": "ELGA Pflegesituationsbericht, EIS Basic v2.06.2"
+    },
+    {
+      "code": "urn:elga:nurse-tf:2017-v2.06.2:EIS_Enhanced",
+      "display": "ELGA Pflegesituationsbericht, EIS Enhanced v2.06.2"
+    },
+    {
+      "code": "urn:elga:nurse-tf:2017-v2.06.2:EIS_FullSupport",
+      "display": "ELGA Pflegesituationsbericht, EIS Full Support v2.06.2"
+    },
+    {
+      "code": "urn:elga:radio:2011:EIS_Basic",
+      "display": "ELGA Befundbericht Radiologie",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:radio:2011:EIS_Enhanced",
+      "display": "ELGA Befundbericht Radiologie"
+    },
+    {
+      "code": "urn:elga:radio:2011:EIS_FullSupport",
+      "display": "ELGA Befundbericht Radiologie"
+    },
+    {
+      "code": "urn:elga:radio:2013:EIS_Basic",
+      "display": "ELGA Befundbericht Radiologie",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:radio:2013:EIS_Enhanced",
+      "display": "ELGA Befundbericht Radiologie"
+    },
+    {
+      "code": "urn:elga:radio:2013:EIS_FullSupport",
+      "display": "ELGA Befundbericht Radiologie"
+    },
+    {
+      "code": "urn:elga:radio:2014:EIS_Basic",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:radio:2014:EIS_Enhanced",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:radio:2014:EIS_FullSupport",
+      "display": "ELGA Befund bildgebende Diagnostik,EIS Full Support"
+    },
+    {
+      "code": "urn:elga:radio:2015-v2.06:EIS_Basic",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Basic v2.06",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:radio:2015-v2.06:EIS_Enhanced",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Enhanced v2.06"
+    },
+    {
+      "code": "urn:elga:radio:2015-v2.06:EIS_FullSupport",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Full Support v2.06"
+    },
+    {
+      "code": "urn:elga:radio:2015:EIS_Basic",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Basic",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:radio:2015:EIS_Enhanced",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Enhanced"
+    },
+    {
+      "code": "urn:elga:radio:2015:EIS_FullSupport",
+      "display": "ELGA Befund bildgebende Diagnostik,EIS Full Support"
+    },
+    {
+      "code": "urn:elga:radio:2017-v2.06.2:EIS_Basic",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Basic v2.06.2",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Gilt f\u00fcr EIS Basic und Structured"
+        }
+      ]
+    },
+    {
+      "code": "urn:elga:radio:2017-v2.06.2:EIS_Enhanced",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Enhanced v2.06.2"
+    },
+    {
+      "code": "urn:elga:radio:2017-v2.06.2:EIS_FullSupport",
+      "display": "ELGA Befund bildgebende Diagnostik, EIS Full Support v2.06.2"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.2.0+20210304:EIS_Enhanced",
+      "display": "HL7 Austria Arztbrief 1.2.0+20210304, EIS Enhanced"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.2.0+20210304:EIS_Enhanced+",
+      "display": "HL7 Austria Arztbrief 1.2.0+20210304, EIS Enhanced+"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.2.0+20210304:EIS_FullSupport",
+      "display": "HL7 Austria Arztbrief 1.2.0+20210304, EIS FullSupport"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.2.0+20210304:EIS_FullSupport+",
+      "display": "HL7 Austria Arztbrief 1.2.0+20210304, EIS FullSupport+"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.3.0+20220209:EIS_Enhanced",
+      "display": "HL7 Austria Arztbrief 1.3.0+20220209, EIS Enhanced"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.3.0+20220209:EIS_Enhanced+",
+      "display": "HL7 Austria Arztbrief 1.3.0+20220209, EIS Enhanced+"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.3.0+20220209:EIS_FullSupport",
+      "display": "HL7 Austria Arztbrief 1.3.0+20220209, EIS FullSupport"
+    },
+    {
+      "code": "urn:hl7-at:arztb:1.3.0+20220209:EIS_FullSupport+",
+      "display": "HL7 Austria Arztbrief 1.3.0+20220209, EIS FullSupport+"
+    },
+    {
+      "code": "urn:hl7-at:bgd:3.0.0+20240628",
+      "display": "HL7 Austria Befund bildgebende Diagnostik 3.0.0+20240628"
+    },
+    {
+      "code": "urn:hl7-at:bgd:3.0.1+20240911",
+      "display": "HL7 Austria Befund bildgebende Diagnostik 3.0.1+20240911"
+    },
+    {
+      "code": "urn:hl7-at:bgd:3.0.2+20250213",
+      "display": "HL7 Austria Befund bildgebende Diagnostik 3.0.2+20250213"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:1.1.0+20210512",
+      "display": "HL7 Austria e-Impfpass 1.1.0+20210512"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:1.1.1+20210601",
+      "display": "HL7 Austria e-Impfpass 1.1.1+20210601"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:1.2.0+20220103",
+      "display": "HL7 Austria e-Impfpass 1.2.0+20220103"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:1.3.0+20220127",
+      "display": "HL7 Austria e-Impfpass 1.3.0+20220127"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:1.3.1+20220719",
+      "display": "HL7 Austria e-Impfpass 1.3.1+20220719"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:2.0.0+20230717",
+      "display": "HL7 Austria e-Impfpass 2.0.0+20230717"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:2.0.1+20250217",
+      "display": "HL7 Austria e-Impfpass 2.0.1+20250217"
+    },
+    {
+      "code": "urn:hl7-at:eImpf:2019",
+      "display": "HL7 Austria e-Impfpass 2019"
+    },
+    {
+      "code": "urn:hl7-at:emedat:3.0.0+20250615",
+      "display": "HL7 Austria e-Medikation 3.0.0+20250615"
+    },
+    {
+      "code": "urn:hl7-at:lab:3.0.0+20211214",
+      "display": "HL7 Austria Labor- und Mikrobiologiebefund 3.0.0+20211214"
+    },
+    {
+      "code": "urn:hl7-at:telemon-epi:1.2.0+20210304",
+      "display": "HL7 Austria Telemonitoring Episodenbericht 1.2.0+20210304"
+    }
+  ]
+}

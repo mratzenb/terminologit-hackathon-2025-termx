@@ -1,0 +1,276 @@
+{
+  "resourceType": "ValueSet",
+  "id": "rads-liverimaging",
+  "url": "https://termgit.elga.gv.at/ValueSet/rads-liverimaging",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.6.0.10.92"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "rads-liverimaging",
+  "title": "RADS_LiverImaging",
+  "status": "active",
+  "date": "2025-03-24",
+  "publisher": "American College of Radiology",
+  "contact": [
+    {
+      "name": "American College of Radiology",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.acr.org/"
+        }
+      ]
+    }
+  ],
+  "description": "**Description:** Value set for the diagnostic imaging report (v3), containing concepts for the classification based on LI-RADS\u00ae (Liver Imaging Reporting & Data System). Note: The Reporting and Data Systems (RADS) assessment scales are a registered trademark of the American College of Radiology.\n\n**Beschreibung:** Value-Set f\u00fcr den Befund bildgebende Diagnostik (V3), mit Konzepten f\u00fcr die Klassifikation gem\u00e4\u00df LI-RADS\u00ae (Liver Imaging Reporting & Data System). Achtung: Die \"Reporting and Data Systems (RADS)\"-Skalen sind eine eingetragene Marke des American College of Radiology.",
+  "copyright": "Enth\u00e4lt durch SNOMED International urheberrechtlich gesch\u00fctzte Information. Jede Verwendung von SNOMED CT in \u00d6sterreich erfordert eine aufrechte Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in \u00d6sterreich statt und erf\u00fcllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen k\u00f6nnen \u00fcber das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS).",
+  "compose": {
+    "include": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "concept": [
+          {
+            "code": "40191000234109",
+            "display": "LI-RADS-Kategorie NC: Nicht kategorisierbar (aufgrund von fehlender Bildgebung oder schlechter Qualit\u00e4t)",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-NC"
+              }
+            ]
+          },
+          {
+            "code": "40221000234103",
+            "display": "LI-RADS-Kategorie 1: Definitiv gutartig",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-1"
+              }
+            ]
+          },
+          {
+            "code": "40241000234109",
+            "display": "LI-RADS-Kategorie 2: Wahrscheinlich gutartig",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-2"
+              }
+            ]
+          },
+          {
+            "code": "40231000234100",
+            "display": "LI-RADS-Kategorie 3: Mittelgradige Wahrscheinlichkeit f\u00fcr B\u00f6sartigkeit",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-3"
+              }
+            ]
+          },
+          {
+            "code": "40251000234106",
+            "display": "LI-RADS-Kategorie 4: Hepatozellul\u00e4res Karzinom (HCC) wahrscheinlich",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-4"
+              }
+            ]
+          },
+          {
+            "code": "40201000234107",
+            "display": "LI-RADS-Kategorie 5: Definitiv hepatozellul\u00e4res Karzinom (HCC)",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-5"
+              }
+            ]
+          },
+          {
+            "code": "40261000234108",
+            "display": "LI-RADS-Kategorie M: Wahrscheinlich oder definitiv b\u00f6sartig, nicht notwendigerweise hepatozellul\u00e4res Karzinom (HCC)",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-M"
+              }
+            ]
+          },
+          {
+            "code": "40211000234105",
+            "display": "LI-RADS-Kategorie TIV: Tumorinfiltration in die Vene",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "LI-TIV"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2025-03-31T09:06:14+00:00",
+    "contains": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40191000234109",
+        "display": "LI-RADS-Kategorie NC: Nicht kategorisierbar (aufgrund von fehlender Bildgebung oder schlechter Qualit\u00e4t)",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-NC"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40221000234103",
+        "display": "LI-RADS-Kategorie 1: Definitiv gutartig",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-1"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40241000234109",
+        "display": "LI-RADS-Kategorie 2: Wahrscheinlich gutartig",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-2"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40231000234100",
+        "display": "LI-RADS-Kategorie 3: Mittelgradige Wahrscheinlichkeit f\u00fcr B\u00f6sartigkeit",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-3"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40251000234106",
+        "display": "LI-RADS-Kategorie 4: Hepatozellul\u00e4res Karzinom (HCC) wahrscheinlich",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-4"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40201000234107",
+        "display": "LI-RADS-Kategorie 5: Definitiv hepatozellul\u00e4res Karzinom (HCC)",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-5"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40261000234108",
+        "display": "LI-RADS-Kategorie M: Wahrscheinlich oder definitiv b\u00f6sartig, nicht notwendigerweise hepatozellul\u00e4res Karzinom (HCC)",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-M"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "40211000234105",
+        "display": "LI-RADS-Kategorie TIV: Tumorinfiltration in die Vene",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "LI-TIV"
+          }
+        ]
+      }
+    ]
+  }
+}

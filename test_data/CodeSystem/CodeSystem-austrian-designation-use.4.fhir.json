@@ -1,0 +1,63 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "austrian-designation-use",
+  "url": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.217"
+    }
+  ],
+  "version": "2.1.0",
+  "name": "austrian-designation-use",
+  "title": "Austrian Designation Use",
+  "status": "active",
+  "date": "2024-04-02",
+  "publisher": "ELGA GmbH",
+  "description": "M\u00f6gliche Designations f\u00fcr den \u00f6sterreichischen eHealth-Bereich",
+  "content": "complete",
+  "count": 8,
+  "concept": [
+    {
+      "code": "alt",
+      "display": "alt",
+      "definition": "Alternativer oder vergangener Displayname"
+    },
+    {
+      "code": "alterslimit_max",
+      "display": "alterslimit_max",
+      "definition": "Maximalalter in Monaten f\u00fcr kostenfreies Impfprogramm"
+    },
+    {
+      "code": "alterslimit_min",
+      "display": "alterslimit_min",
+      "definition": "Mindestalter in Monaten f\u00fcr kostenfreies Impfprogramm"
+    },
+    {
+      "code": "concept_beschreibung",
+      "display": "concept_beschreibung",
+      "definition": "Weiterf\u00fchrende Beschreibung"
+    },
+    {
+      "code": "einheit_codiert",
+      "display": "einheit_codiert",
+      "definition": "Wird nur im Laborbereich genutzt"
+    },
+    {
+      "code": "einheit_print",
+      "display": "einheit_print",
+      "definition": "Wird nur im Laborbereich genutzt"
+    },
+    {
+      "code": "hinweise",
+      "display": "hinweise",
+      "definition": "Spezielle Hinweise"
+    },
+    {
+      "code": "relationships",
+      "display": "relationships",
+      "definition": "Mapping zu anderen Konzepten"
+    }
+  ]
+}

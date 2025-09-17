@@ -1,0 +1,1458 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "eimpf-ergaenzung",
+  "url": "https://termgit.elga.gv.at/CodeSystem-eimpf-ergaenzung",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.183"
+    }
+  ],
+  "version": "1.3.0",
+  "name": "eimpf-ergaenzung",
+  "title": "eImpf_Ergaenzung",
+  "status": "active",
+  "date": "2022-11-07",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "www.elga.gv.at"
+        }
+      ]
+    }
+  ],
+  "description": "**Description:** ELGA code list for temporary codes that will be represented in the national SNOMED extension in the future\n\n**Beschreibung:** ELGA Codeliste f\u00fcr tempor\u00e4re Codes, die in Zukunft in der nationale SNOMED Extension abgebildet werden sollen",
+  "content": "complete",
+  "count": 142,
+  "property": [
+    {
+      "code": "hints",
+      "type": "string"
+    },
+    {
+      "code": "status",
+      "type": "code"
+    }
+  ],
+  "concept": [
+    {
+      "code": "B",
+      "display": "Auffrischung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "B.I",
+      "display": "Auffrischungsserie Teil 1",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "B.II",
+      "display": "Auffrischungsserie Teil 2",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D1",
+      "display": "Dosis 1",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D2",
+      "display": "Dosis 2",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D3",
+      "display": "Dosis 3",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D4",
+      "display": "Dosis 4",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D5",
+      "display": "Dosis 5",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D6",
+      "display": "Dosis 6",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D7",
+      "display": "Dosis 7",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D8",
+      "display": "Dosis 8",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "D9",
+      "display": "Dosis 9",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfdosis"
+        }
+      ]
+    },
+    {
+      "code": "DGC-R",
+      "display": "Genesungs-Zertifikat"
+    },
+    {
+      "code": "DGC-T",
+      "display": "Test-Zertifikat"
+    },
+    {
+      "code": "DGC-V",
+      "display": "Impf-Zertifikat"
+    },
+    {
+      "code": "IG1",
+      "display": "Indikationsimpfung f\u00fcr Risikogruppe",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfgrund"
+        }
+      ]
+    },
+    {
+      "code": "IG2",
+      "display": "Wiederholungsimpfung aufgrund medizinischer Indikation",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfgrund"
+        }
+      ]
+    },
+    {
+      "code": "IS001",
+      "display": "Bildungseinrichtung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfsetting"
+        }
+      ]
+    },
+    {
+      "code": "IS002",
+      "display": "Arbeitsplatz/Betriebe",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfsetting"
+        }
+      ]
+    },
+    {
+      "code": "IS003",
+      "display": "Krankenhaus inkl. Kur- und Rehaeinrichtungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfsetting"
+        },
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "IS004",
+      "display": "Ordination",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfsetting"
+        },
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "IS005",
+      "display": "\u00d6ffentliche Impfstelle/Impfstra\u00dfe",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfsetting"
+        }
+      ]
+    },
+    {
+      "code": "IS006",
+      "display": "Wohnbereich und Betreuungseinrichtungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfsetting"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA001",
+      "display": "Kombinationsschema Di-Te-Pert-HiB-IPV-HepB, Erstimpfung bis 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA002",
+      "display": "Kombinationsschema Di-Te-Pert-HiB-IPV-HepB, Erstimpfung ab 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA003",
+      "display": "Kombinationsschema Di-Te-Pert-IPV-HepB, Erstimpfung ab 6 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA004",
+      "display": "Kombinationsschema Di-Te-Pert-HiB-IPV-HepB, Indikation",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA005",
+      "display": "FSME Grundschema, FSME-Immun",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA006",
+      "display": "FSME Grundschema, Encepur",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA007",
+      "display": "FSME Grundschema, FSME-Immun, Erstimpfung bis 1 Jahr"
+    },
+    {
+      "code": "SCHEMA008",
+      "display": "FSME Grundschema, Encepur, Erstimpfung bis 1 Jahr"
+    },
+    {
+      "code": "SCHEMA009",
+      "display": "FSME Schnellschema, FSME-Immun",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA010",
+      "display": "FSME Schnellschema, Encepur",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA011",
+      "display": "Haemophilus influenzae Typ B Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA012",
+      "display": "Hepatitis A Monokomponente Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA013",
+      "display": "Hepatitis AB Grundschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA014",
+      "display": "Hepatitis A Monokomponente Grundschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA015",
+      "display": "Hepatitis AB Schnellschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA016",
+      "display": "Hepatitis A & Typhus Grundschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA017",
+      "display": "Hepatitis B Monokomponente Grundschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA019",
+      "display": "Hepatitis B erhoehte Antigenmenge Grundschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA020",
+      "display": "HPV Grundschema, bis 18 Jahre",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA021",
+      "display": "HPV Grundschema, ab 18 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA022",
+      "display": "HPV Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA023",
+      "display": "Influenza Grundschema, Erstimpfung Kinder",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA024",
+      "display": "Influenza Grundschema, Einmalimpfung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA025",
+      "display": "MMR Grundschema ab 9 Monaten",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA027",
+      "display": "MMR Indikationsschema, Erstimpfung 6-8 Monate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA028",
+      "display": "Meningokokken B Grundschema, Erstimpfung 2-5 Monate, 4 Dosen",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        },
+        {
+          "code": "hints",
+          "valueString": "DEPRECATED"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA029",
+      "display": "Meningokokken B Grundschema, Erstimpfung 2-5 Monate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA030",
+      "display": "Meningokokken B Grundschema, Erstimpfung 6-11 Monate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA031",
+      "display": "Meningokokken B Grundschema, Erstimpfung 12-23 Monate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA032",
+      "display": "Meningokokken B Grundschema, Erstimpfung 2-18 Jahre, Bexsero",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA033",
+      "display": "Meningokokken B Indikationsschema, ab 25 Jahren, Bexsero",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA034",
+      "display": "Meningokokken B Indikationsschema, ab 25 Jahren, Trumenba",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA035",
+      "display": "Meningokokken C Indikationsschema, 2-4 Monate, Neisvac C",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA036",
+      "display": "Meningokokken C Indikationsschema, 2-12 Monate, Menjugate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA037",
+      "display": "Meningokokken C Indikationsschema, 4-12 Monate, Neisvac C",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA038",
+      "display": "Meningokokken C Grundschema, ab 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA039",
+      "display": "Meningokokken ACWY Grundschema, ab 10 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA040",
+      "display": "Meningokokken ACWY Indikationsschema, ab 1 Jahr",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        },
+        {
+          "code": "hints",
+          "valueString": "DEPRECATED"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA041",
+      "display": "Meningokokken ACWY Indikationsschema, Erstimpfung bis 1 Jahr",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        },
+        {
+          "code": "hints",
+          "valueString": "DEPRECATED"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA042",
+      "display": "Pneumokokken Grundschema, Erstimpfung bis 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA043",
+      "display": "Pneumokokken Grundschema, Erstimpfung 1-2 Jahre",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA044",
+      "display": "Pneumokokken Indikationsschema (hohes Risiko), Erstimpfung bis 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA045",
+      "display": "Pneumokokken Indikationsschema  (hohes Risiko), Erstimpfung im 2. Lebensjahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA046",
+      "display": "Pneumokokken Indikationsschema  (hohes Risiko), Erstimpfung ab 3 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA050",
+      "display": "Rotavirus Grundschema, 2 Dosen, Erstimpfung 6.- 19. Woche, Rotarix",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA051",
+      "display": "Rotavirus Grundschema, 2 Dosen, Erstimpfung 6.- 27. Woche, Rotateq",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA052",
+      "display": "Rotavirus Grundschema, 1 Dosis, Erstimpfung 19. - 23. Woche, Rotarix",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA053",
+      "display": "Rotavirus Grundschema, 1 Dosis, Erstimpfung 28. - 32. Woche, Rotateq",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA054",
+      "display": "Rotavirus Grundschema, 3 Dosen, Erstimpfung 6. - 23. Woche, Rotateq",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA060",
+      "display": "Varizellen Grundschema, ab 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA061",
+      "display": "Kombinationsschema MMRV, ab 9 Monaten, MMR - MMRV - V",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA062",
+      "display": "Kombinationsschema MMRV, ab 12 Monaten, MMR - MMRV - V",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA063",
+      "display": "Varizellen Indikationsschema, Erstimpfung bis 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA064",
+      "display": "Herpes Zoster Grundschema, ab 50 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA065",
+      "display": "Gelbfieber Grundschema, ab 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA066",
+      "display": "Japanische Enzephalitis Grundschema, ab 2 Monaten",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA067",
+      "display": "Japanische Enzephalitis Schnellschema, ab 18 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA068",
+      "display": "Typhus Grundschema, Injektion",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA069",
+      "display": "Typhus Grundschema, Oral",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA070",
+      "display": "Tollwut Grundschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA071",
+      "display": "Tollwut Schnellschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA072",
+      "display": "Tollwut postexpositionelles Schema, Essen 4 Dosen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA073",
+      "display": "Tollwut postexpositionelles Schema, Essen 5 Dosen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA074",
+      "display": "Tollwut postexpositionelles Schema, Zagreb",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA075",
+      "display": "Tollwut postexpositionelles Schema, mit Tollwut-Vorimpfung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA076",
+      "display": "Cholera Grundschema, Erstimpfung 2-6 Jahre",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA078",
+      "display": "Cholera Grundschema, Erstimpfung ab 6 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA079",
+      "display": "Meningokokken B Grundschema, Erstimpfung 11-18 Jahre, Trumenba",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA080",
+      "display": "Kombinationsschema Di-Te-Pert-IPV",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA081",
+      "display": "Kombinationsschema Di-Te-Pert",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA082",
+      "display": "Kombinationsschema Di-Te",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA083",
+      "display": "Tetanus Monokomponente",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA084",
+      "display": "Poliomyelitis Monokomponente",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA085",
+      "display": "Hepatitis B Monokomponente Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA086",
+      "display": "SARS-CoV-2 Grundschema, Comirnaty",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA087",
+      "display": "SARS-CoV-2 Grundschema, Spikevax",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA088",
+      "display": "SARS-CoV-2 Grundschema, Vaxzevria",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA089",
+      "display": "SARS-CoV-2 Grundschema, Jcovden",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA090",
+      "display": "SARS-CoV-2 Grundschema, Auslandsimpfung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA091",
+      "display": "Herpes Zoster Grundschema, nach Zostavax",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA092",
+      "display": "Herpes Zoster Indikationsschema, ab 18 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA093",
+      "display": "MMR Grundschema, ab 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA094",
+      "display": "SARS-CoV-2 Indikationsschema, Comirnaty",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        },
+        {
+          "code": "hints",
+          "valueString": "DEPRECATED"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA095",
+      "display": "SARS-CoV-2 Indikationsschema, Spikevax",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        },
+        {
+          "code": "hints",
+          "valueString": "DEPRECATED"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA096",
+      "display": "SARS-CoV-2 heterologes Schema (Impfstoffwechsel)",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA097",
+      "display": "Pneumokokken Grundschema, Erstimpfung 2-5 Jahre",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA098",
+      "display": "Pneumokokken Grundschema, ab 60 Jahre",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA099",
+      "display": "SARS-CoV-2 Grundschema, Nuvaxovid",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA100",
+      "display": "Kombinationsschema MMRV, ab 9 Monaten, MMRV - MMRV",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA101",
+      "display": "Kombinationsschema MMRV, ab 12 Monaten, MMRV - MMRV",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA102",
+      "display": "Hepatitis B Monokomponente Schnellschema durch Indikation",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA103",
+      "display": "Hepatitis B Prophylaxe Neugeborener Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA104",
+      "display": "Influenza Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA105",
+      "display": "Kombinationsschema Di-Te-IPV",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA106",
+      "display": "Meningokokken ACWY Indikationsschema, Nimenrix bis 6 Monate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA107",
+      "display": "Meningokokken ACWY Indikationsschema, Nimenrix 6-12 Monate",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA108",
+      "display": "Meningokokken ACWY Indikationsschema, Nimenrix ab 1 Jahr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA109",
+      "display": "Meningokokken ACWY Indikationsschema, Menveo ab 2 Jahre",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA110",
+      "display": "SARS-CoV-2 Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA111",
+      "display": "(Affen-)Pocken Indikationsschema",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA112",
+      "display": "SARS-CoV-2 Grundschema, Valneva",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA113",
+      "display": "Kombinationsschema MMRV, ab 9 Monaten, MMRV - MMR - V",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA114",
+      "display": "Kombinationsschema MMRV, ab 12 Monaten, MMRV - MMR - V",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA115",
+      "display": "(Affen-)Pocken Indikationsschema, einmalige Impfung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "SCHEMA116",
+      "display": "Pneumokokken Indikationsschema (erh\u00f6htes Risiko), ab 50 Jahren",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Impfschema"
+        }
+      ]
+    },
+    {
+      "code": "_AllgemeineBev\u00f6lkerung",
+      "display": "Allgemeine Bev\u00f6lkerung",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Exponierte Personengruppen"
+        },
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "_Ausnahme",
+      "display": "Ausnahme",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialCaseVaccination"
+        }
+      ]
+    },
+    {
+      "code": "_Blau",
+      "display": "Blau",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialCaseVaccination"
+        }
+      ]
+    },
+    {
+      "code": "_Einzel",
+      "display": "Impfungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Immunizationtarget"
+        }
+      ]
+    },
+    {
+      "code": "_Empfohlene",
+      "display": "Empfohlene Impfungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Immunizationtarget"
+        }
+      ]
+    },
+    {
+      "code": "_Gelb",
+      "display": "Gelb",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialCaseVaccination"
+        }
+      ]
+    },
+    {
+      "code": "_Grau",
+      "display": "Grau",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialCaseVaccination"
+        }
+      ]
+    },
+    {
+      "code": "_Gr\u00fcn",
+      "display": "Gr\u00fcn",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialCaseVaccination"
+        }
+      ]
+    },
+    {
+      "code": "_Kombinationen",
+      "display": "Kombinationsimpfungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Immunizationtarget"
+        }
+      ]
+    },
+    {
+      "code": "_Reise",
+      "display": "Reiseimpfungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Immunizationtarget"
+        }
+      ]
+    },
+    {
+      "code": "_Rot",
+      "display": "Rot",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialCaseVaccination"
+        }
+      ]
+    },
+    {
+      "code": "_SpezielleRisikogruppef\u00fcr",
+      "display": "Spezielle Risikogruppe f\u00fcr",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "SpecialSituationIndication"
+        }
+      ]
+    },
+    {
+      "code": "_Weitere",
+      "display": "Weitere Impfungen",
+      "property": [
+        {
+          "code": "hints",
+          "valueString": "Immunizationtarget"
+        }
+      ]
+    },
+    {
+      "code": "off-label-use",
+      "display": "off-label-use"
+    }
+  ]
+}

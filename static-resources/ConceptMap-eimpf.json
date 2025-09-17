@@ -1,0 +1,352 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "eimpf-impfstoffe--1.0.0",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+      "valueUrl": "http://localhost:4200/fhir/ConceptMap/eimpf-impfstoffe"
+    }
+  ],
+  "url": "https://termx.org/fhir/MapSet/eimpf-impfstoffe",
+  "version": "1.0.0",
+  "title": "eimpf-impfstoffe",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-09-16T09:53:02.86054Z",
+  "publisher": "TermX",
+  "effectivePeriod": {
+    "start": "2025-09-15T00:00:00Z"
+  },
+  "property": [
+    {
+      "code": "patient-min-age-in-months",
+      "type": "integer"
+    },
+    {
+      "code": "patient-max-age-in-months",
+      "type": "integer"
+    }
+  ],
+  "group": [
+    {
+      "source": "https://termgit.elga.gv.at/CodeSystem/eimpf-impfstoffe",
+      "target": "https://termgit.elga.gv.at/CodeSystem/eimpf-ergaenzung",
+      "element": [
+        {
+          "code": "3909165",
+          "display": "NIMENRIX PLV+LSM FSPR 0,5ML",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 168
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "6052771",
+          "display": "INFLUVAC TRI FSPR 0,5ML O.K.",
+          "target": [
+            {
+              "code": "IS011",
+              "display": "Österreichisches Influenza Impfprogramm",
+              "relationship": "related-to"
+            }
+          ]
+        },
+        {
+          "code": "5519103",
+          "display": "BEYFORTUS FSP 50MG/0,5ML O.K",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5519126",
+          "display": "BEYFORTUS FSP 100MG/1ML  O.K",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5502433",
+          "display": "GARDASIL 9 FSPR +2KAN",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 372
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "6054586",
+          "display": "FLUAD IJSUS FSPR 0,5ML",
+          "target": [
+            {
+              "code": "IS011",
+              "display": "Österreichisches Influenza Impfprogramm",
+              "relationship": "related-to"
+            }
+          ]
+        },
+        {
+          "code": "6056875",
+          "display": "REPEVAX INJ FSPR 0,5ML O.K.",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 192
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "1292200",
+          "display": "ENGERIX-B FSPR 10MCG/0,5ML",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 192
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "2479314",
+          "display": "INFANRIX HEXA PLV INJS FSPR",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 192
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5505414",
+          "display": "VAXNEUVANCE IJSUS FSPR",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "3511764",
+          "display": "MMRVAXPRO PLV+LSM FSPR +2K",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "4475131",
+          "display": "GARDASIL 9 FSPR +2KAN",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 372
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "4224707",
+          "display": "GARDASIL 9 FSPR +2KAN",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 372
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "2467788",
+          "display": "REPEVAX FSPR 0,5ML+1 KANUELE",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to"
+            }
+          ]
+        },
+        {
+          "code": "4973521",
+          "display": "ROTARIX SUS TUBE 1,5ML",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to",
+              "property": [
+                {
+                  "code": "patient-min-age-in-months",
+                  "valueInteger": 0
+                },
+                {
+                  "code": "patient-max-age-in-months",
+                  "valueInteger": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "2467765",
+          "display": "HBVAXPRO IJSUS FSP  5MCG 2KN",
+          "target": [
+            {
+              "code": "IS010",
+              "display": "Kostenfreies Kinderimpfprogramm",
+              "relationship": "related-to"
+            }
+          ]
+        },
+        {
+          "code": "5536975",
+          "display": "FLUENZ NA-SPRAY",
+          "target": [
+            {
+              "code": "IS011",
+              "display": "Österreichisches Influenza Impfprogramm",
+              "relationship": "related-to"
+            }
+          ]
+        },
+        {
+          "code": "5536969",
+          "display": "FLUENZ NA-SPRAY",
+          "target": [
+            {
+              "code": "IS011",
+              "display": "Österreichisches Influenza Impfprogramm",
+              "relationship": "related-to"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

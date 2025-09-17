@@ -1,0 +1,158 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "elga-e-health-anwendungen",
+  "url": "https://termgit.elga.gv.at/CodeSystem/elga-e-health-anwendungen",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.159"
+    }
+  ],
+  "version": "2.3.0",
+  "name": "elga-e-health-anwendungen",
+  "title": "ELGA_e-Health_Anwendungen",
+  "status": "active",
+  "date": "2025-05-15",
+  "publisher": "ELGA GmbH",
+  "contact": [
+    {
+      "name": "https://www.elga.gv.at",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.elga.gv.at"
+        }
+      ]
+    }
+  ],
+  "description": "ELGA Codeliste f\u00fcr autonome ELGA-Anwendungen und Services (relevant f\u00fcr das Berechtigungssystem)",
+  "content": "complete",
+  "count": 15,
+  "property": [
+    {
+      "code": "child",
+      "type": "code"
+    },
+    {
+      "code": "parent",
+      "type": "code"
+    }
+  ],
+  "concept": [
+    {
+      "code": "100",
+      "display": "ELGA Anwendungen",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "101"
+        },
+        {
+          "code": "child",
+          "valueCode": "102"
+        }
+      ]
+    },
+    {
+      "code": "101",
+      "display": "E-Befunde",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "100"
+        }
+      ]
+    },
+    {
+      "code": "102",
+      "display": "E-Medikation",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "100"
+        }
+      ]
+    },
+    {
+      "code": "103",
+      "display": "e-Impfpass Anwendung"
+    },
+    {
+      "code": "104",
+      "display": "Patientenverf\u00fcgung Anwendung"
+    },
+    {
+      "code": "105",
+      "display": "EMS Epidemiologisches Meldesystem/EPI-Service"
+    },
+    {
+      "code": "107",
+      "display": "National Contact Point for eHealth"
+    },
+    {
+      "code": "150",
+      "display": "Virtuelle Organisation f\u00fcr Testzwecke"
+    },
+    {
+      "code": "151",
+      "display": "PVN Gesunder Tennengau Hallein"
+    },
+    {
+      "code": "152",
+      "display": "PVN Gesunder Tennengau Lammertal"
+    },
+    {
+      "code": "153",
+      "display": "PVN Gesunder Tennengau-S\u00fcd"
+    },
+    {
+      "code": "200",
+      "display": "MyHealth@EU Services",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "106"
+        },
+        {
+          "code": "child",
+          "valueCode": "201"
+        },
+        {
+          "code": "child",
+          "valueCode": "202"
+        }
+      ]
+    },
+    {
+      "code": "106",
+      "display": "e-Prescription",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "200"
+        }
+      ]
+    },
+    {
+      "code": "201",
+      "display": "MyHealth@EU Service Patient Identification",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "200"
+        }
+      ]
+    },
+    {
+      "code": "202",
+      "display": "MyHealth@EU Service Laboratory Result Report",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "200"
+        }
+      ]
+    }
+  ]
+}

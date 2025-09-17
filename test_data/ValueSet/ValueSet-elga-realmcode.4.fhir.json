@@ -1,0 +1,83 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elga-realmcode",
+  "url": "https://termgit.elga.gv.at/ValueSet/elga-realmcode",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.10.3"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "elga-realmcode",
+  "title": "ELGA_RealmCode",
+  "status": "active",
+  "date": "2024-03-25",
+  "description": "**Description:** Coding of the documents realm. In ELGA documents must use the code 'AT'\n\n**Beschreibung:** Beschreibt den Hoheitsbereich des Dokuments. In ELGA fixiert mit AT.",
+  "compose": {
+    "include": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.0.3166.1.2.2"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/iso-3166-alpha-2-code",
+        "version": "1.0.0+20230131",
+        "concept": [
+          {
+            "code": "AT",
+            "display": "Austria",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "\u00d6sterreich"
+              },
+              {
+                "use": {
+                  "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+                  "code": "hinweise",
+                  "display": "hinweise"
+                },
+                "value": "Einziger erlaubter Wert"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2024-03-25T06:36:54+00:00",
+    "contains": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:1.0.3166.1.2.2"
+          }
+        ],
+        "system": "https://termgit.elga.gv.at/CodeSystem/iso-3166-alpha-2-code",
+        "version": "1.0.0+20230131",
+        "code": "AT",
+        "display": "Austria",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "\u00d6sterreich"
+          },
+          {
+            "use": {
+              "system": "https://termgit.elga.gv.at/CodeSystem/austrian-designation-use",
+              "code": "hinweise",
+              "display": "hinweise"
+            },
+            "value": "Einziger erlaubter Wert"
+          }
+        ]
+      }
+    ]
+  }
+}

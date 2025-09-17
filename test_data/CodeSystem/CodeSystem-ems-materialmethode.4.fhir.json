@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ems-materialmethode",
+  "url": "https://termgit.elga.gv.at/CodeSystem/ems-materialmethode",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.99"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "ems-materialmethode",
+  "title": "EMS_MaterialMethode",
+  "status": "active",
+  "date": "2017-01-26",
+  "description": "Diese Codeliste definiert Inhalte für procedure/methodCode",
+  "content": "complete",
+  "count": 8,
+  "concept": [
+    {
+      "code": "HIST",
+      "display": "Methode Material Histologie"
+    },
+    {
+      "code": "KULTUR",
+      "display": "Methode Kultur Material"
+    },
+    {
+      "code": "MAT1",
+      "display": "Primary Sample"
+    },
+    {
+      "code": "MAT2",
+      "display": "Secondary Sample"
+    },
+    {
+      "code": "MIKRO",
+      "display": "Methode Mikroskopie Material"
+    },
+    {
+      "code": "NAT",
+      "display": "Methode NAT Material"
+    },
+    {
+      "code": "SERO",
+      "display": "Methode Material Serologie"
+    },
+    {
+      "code": "VIRUS",
+      "display": "Methode Material Virusnachweis"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+services:
+  nginx:
+    image: nginx:stable
+    restart: always
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
+      - ./static-resources:/var/www/static-resources
+    ports:
+      - "4200:4200"
+    networks: 
+      - termx
+    depends_on:
+      - fsh-chef
+      - termx-server
+      - termx-web
+      - termx-swagger
+      - termx-fml-editor
+  
+  termx-server:
+    restart: unless-stopped
+    image: ghcr.io/termx-health/termx-server:latest
+    container_name: termx-server
+    depends_on:
+      - termxpg
+      - termx-minio
+    env_file:
+      - server.env
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8200/fhir/metadata" ]
+      interval: 1s
+      timeout: 5s
+      retries: 60
+    ports:
+      - 8200:8200
+    mem_reservation: 2g
+    networks:
+      - termx
+
+  termx-web:
+    restart: unless-stopped
+    image: ghcr.io/termx-health/termx-web:latest 
+    container_name: termx-web
+    depends_on:
+      - termx-server
+    env_file:
+      - web.env
+    networks:
+      - termx
+
+  termxpg:
+    restart: unless-stopped
+    image: postgres:14
+    shm_size: 1g
+    container_name: termxpg
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./pginit.sql:/docker-entrypoint-initdb.d/init.sql
+    env_file:
+      - pg.env
+    networks:
+      - termx
+
+  termx-swagger:
+    restart: unless-stopped
+    image: swaggerapi/swagger-ui
+    container_name: termx-swagger
+    volumes:
+      - ./config/swagger-config.json:/usr/share/nginx/html/swagger-config.json
+    env_file:
+      - swagger.env
+    networks:
+      - termx
+
+  termx-minio:
+    restart: unless-stopped
+    image: quay.io/minio/minio
+    container_name: termx-minio
+    command: server /data --console-address ":9001"
+    volumes:
+      - ./minio-data:/data
+    environment:
+      - MINIO_ROOT_USER=root
+      - MINIO_ROOT_PASSWORD=minio_root
+      - MINIO_CONSOLE_SUBPATH=/minio/
+      - MINIO_BROWSER_REDIRECT_URL=http://localhost/minio
+    ports:
+      - 9100:9000
+      - 9101:9001
+    networks:
+      - termx
+  
+  fsh-chef:
+    restart: unless-stopped
+    image: ghcr.io/termx-health/termx-chef:latest
+    container_name: fsh-chef
+    networks:
+      - termx
+
+  termx-fml-editor:
+    restart: unless-stopped
+    image: ghcr.io/termx-health/termx-fml:latest
+    container_name: termx-fml-editor
+    environment:
+      - BASE_HREF=/fml-editor/
+    networks:
+      - termx
+  
+  test-data-uploader:
+    image: python:3.13
+    restart: "no"
+    depends_on:
+      termx-server:
+        condition: service_healthy
+    entrypoint: [ "python", "test_data_uploader.py", "--target", "http://termx-server:8200/fhir", "--source", "/test_data/" ]
+    volumes:
+      - ./test_data/:/test_data
+      - ./test_data_uploader.py:/test_data_uploader.py
+    networks:
+      - termx
+
+networks:
+  termx:
+    driver: bridge
+
+volumes:
+  pgdata:

@@ -1,0 +1,164 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elga-medikationpharmazeutischeempfehlungstatusdetails",
+  "url": "https://termgit.elga.gv.at/ValueSet/elga-medikationpharmazeutischeempfehlungstatusdetails",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.6.0.10.98"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "elga-medikationpharmazeutischeempfehlungstatusdetails",
+  "title": "ELGA_MedikationPharmazeutischeEmpfehlungStatusDetails",
+  "status": "draft",
+  "date": "2025-05-26",
+  "publisher": "ELGA GmbH",
+  "contact": [
+    {
+      "name": "https://www.elga.gv.at",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.elga.gv.at"
+        }
+      ]
+    }
+  ],
+  "description": "**Description:** Draft value set for the normative ballot for the e-medication (version 3.0.0). The codes will be replaced by SNOMED CT codes as soon as possible. The detailed reason for change or discontinuation in the e-medication\n\n**Beschreibung:**Value-Set-Entwurf f\u00fcr den normativen Ballot zur e-Medikation (Version 3.0.0). Die Codes werden sobald m\u00f6glich durch SNOMED-CT-Codes ersetzt. Der detailierte \u00c4nderungs- oder Absetzungsgrund in der e-Medikation",
+  "copyright": "Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). https://mlds.ihtsdotools.org/#/landing/AT?lang=de\n\nEnth\u00e4lt durch SNOMED International urheberrechtlich gesch\u00fctzte Information. Jede Verwendung von SNOMED CT in \u00d6sterreich erfordert eine aufrechte Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in \u00d6sterreich statt und erf\u00fcllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen k\u00f6nnen \u00fcber das Member Licensing and Distribution Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/AT?lang=de",
+  "compose": {
+    "include": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "concept": [
+          {
+            "code": "395009001",
+            "display": "Absetzen der Medikation - Nebenwirkung",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Nebenwirkung"
+              }
+            ]
+          },
+          {
+            "code": "395008009",
+            "display": "Absetzen der Medikation - Kontraindikation",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Kontraindikation"
+              }
+            ]
+          },
+          {
+            "code": "395007004",
+            "display": "Absetzen der Medikation - Unwirksam",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Unwirksam"
+              }
+            ]
+          },
+          {
+            "code": "129834002",
+            "display": "Non-Adherence bezogen auf Medikationsschema",
+            "designation": [
+              {
+                "language": "de-AT",
+                "value": "Non-Compliance"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2025-05-26T09:38:56+00:00",
+    "contains": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "395009001",
+        "display": "Absetzen der Medikation - Nebenwirkung",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Nebenwirkung"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "395008009",
+        "display": "Absetzen der Medikation - Kontraindikation",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Kontraindikation"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "395007004",
+        "display": "Absetzen der Medikation - Unwirksam",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Unwirksam"
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid",
+            "valueOid": "urn:oid:2.16.840.1.113883.6.76"
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11000234105/version/20250215",
+        "code": "129834002",
+        "display": "Non-Adherence bezogen auf Medikationsschema",
+        "designation": [
+          {
+            "language": "de-AT",
+            "value": "Non-Compliance"
+          }
+        ]
+      }
+    ]
+  }
+}

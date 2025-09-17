@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ems-ergaenzungmeldepflichtigekrankheiten",
+  "url": "https://termgit.elga.gv.at/CodeSystem/ems-ergaenzungmeldepflichtigekrankheiten",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.187"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "ems-ergaenzungmeldepflichtigekrankheiten",
+  "title": "EMS_ErgaenzungMeldepflichtigeKrankheiten",
+  "status": "active",
+  "date": "2020-01-01",
+  "description": "Erg\u00e4nzungsliste der meldepflichtigen Krankheiten f\u00fcr das \u00f6sterreichische EMS",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "A81.9a",
+      "display": "sonstige transmissible spongiforme Enzephalopathie"
+    },
+    {
+      "code": "J09a",
+      "display": "A/H1N1-Virus (Neue Influenza A)"
+    },
+    {
+      "code": "J09b",
+      "display": "A/H5N1-Virus (Vogelgrippe)"
+    },
+    {
+      "code": "J09c",
+      "display": "A/H7N9-Virus"
+    },
+    {
+      "code": "J09d",
+      "display": "MERS-CoV"
+    }
+  ]
+}

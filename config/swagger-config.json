@@ -1,0 +1,19 @@
+{
+  "persistAuthorization": true,
+  "urls": [
+    {
+      "url": "http://localhost:4200/swagger-config/termx.yml",
+      "name": "termx"
+    },
+    {
+      "url": "http://localhost:4200/api/fhir-swagger",
+      "name": "termx-fhir",
+      "servers": [
+        "http://localhost:4200/api/fhir"
+      ]
+    }
+  ],
+  "plugins": [
+    "topbar"
+  ]
+}

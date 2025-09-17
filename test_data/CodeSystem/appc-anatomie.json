@@ -1,0 +1,3504 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "appc-anatomie--1.1.1",
+	"language": "en",
+	"extension": [
+		{
+			"url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+			"valueUrl": "https://termx.cgmtx.de101.cgm.ag/fhir/CodeSystem/appc-anatomie"
+		},
+		{
+			"url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+			"valueCode": "executable"
+		}
+	],
+	"url": "https://termgit.elga.gv.at/CodeSystem/appc-anatomie",
+	"identifier": [
+		{
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.40.0.34.5.38.4"
+		}
+	],
+	"version": "1.1.1",
+	"name": "appc-anatomie",
+	"title": "APPC_Anatomie",
+	"status": "active",
+	"experimental": false,
+	"date": "2025-03-03T08:23:25.823214Z",
+	"publisher": "Bundesfachgruppe Radiologie (BURA)",
+	"contact": [
+		{
+			"name": "http://www.bura.at/",
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.bura.at/"
+				}
+			]
+		}
+	],
+	"description": "**Description:** Code List for all APPC-Codes for 4th Axis: Anatomy  **Beschreibung:** Code Liste aller Codes der 4. APPC-Achse: Anatomie  **Versions-Beschreibung:** Korrekturversion zu 1.0.10",
+	"effectivePeriod": {
+		"start": "2025-02-28T00:00:00Z"
+	},
+	"caseSensitive": false,
+	"hierarchyMeaning": "is-a",
+	"content": "complete",
+	"property": [
+		{
+			"code": "child",
+			"type": "code"
+		},
+		{
+			"code": "definition",
+			"description": "Definition",
+			"type": "string"
+		},
+		{
+			"code": "display",
+			"uri": "http://terminology.hl7.org/CodeSystem/designation-usage|display",
+			"description": "Display",
+			"type": "string"
+		},
+		{
+			"code": "hints",
+			"type": "string"
+		},
+		{
+			"code": "parent",
+			"type": "code"
+		},
+		{
+			"code": "status",
+			"uri": "http://hl7.org/fhir/concept-properties#status",
+			"description": "Status",
+			"type": "code"
+		}
+	],
+	"concept": [
+		{
+			"code": "0",
+			"display": "Maßnahme ohne regionale Zuordnung",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "0-3"
+				},
+				{
+					"code": "child",
+					"valueCode": "0-4"
+				},
+				{
+					"code": "child",
+					"valueCode": "0-2"
+				},
+				{
+					"code": "child",
+					"valueCode": "0-1"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "0-1",
+					"display": "Ganzkörper",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "0"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "0-2",
+					"display": "Körperstamm",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "0"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "0-3",
+					"display": "Teilkörper",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "0"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "0-4",
+					"display": "Fetus",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "0"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "1",
+			"display": "Schädel",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "1-2"
+				},
+				{
+					"code": "child",
+					"valueCode": "1-1"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "1-1",
+					"display": "Hirn",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "1"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-1-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-1-2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "1-1-1",
+							"display": "Kleinhirnbrückenwinkel",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-1-2",
+							"display": "Sella",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "1-2",
+					"display": "Gesichtsschädel",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "1"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-10"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-9"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-8"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-7"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-6"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "1-2-4"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "1-2-1",
+							"display": "Orbita",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-1-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "1-2-1-1",
+									"display": "Tränengang",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "1-2-1-2",
+									"display": "Auge",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "1-2-10",
+							"display": "Zunge",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-2-2",
+							"display": "Kiefer",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-2-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-2-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-2-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-2-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "1-2-2-1",
+									"display": "Oberkiefer",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "1-2-2-2",
+									"display": "Unterkiefer",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "1-2-2-3",
+									"display": "Kiefergelenk",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "1-2-2-4",
+									"display": "Zahn",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "1-2-3",
+							"display": "Nasennebenhöhlen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-2-4",
+							"display": "Schläfenbein",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-2-5",
+							"display": "Schädelbasis",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-2-6",
+							"display": "Nasenbein",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-2-7",
+							"display": "Speicheldrüsen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "1-2-7-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "1-2-7-1",
+									"display": "Speicheldrüsengang",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "1-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "1-2-8",
+							"display": "Mundboden",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "1-2-9",
+							"display": "Jochbogen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "10",
+			"display": "Nervensystem",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "10-2"
+				},
+				{
+					"code": "child",
+					"valueCode": "10-3"
+				},
+				{
+					"code": "child",
+					"valueCode": "10-1"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "10-1",
+					"display": "Plexus cervicobrachialis",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "10"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "10-2",
+					"display": "N. ulnaris",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "10"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "10-3",
+					"display": "N. medianus",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "10"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "2",
+			"display": "Hals",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "2-6"
+				},
+				{
+					"code": "child",
+					"valueCode": "2-4"
+				},
+				{
+					"code": "child",
+					"valueCode": "2-5"
+				},
+				{
+					"code": "child",
+					"valueCode": "2-2"
+				},
+				{
+					"code": "child",
+					"valueCode": "2-3"
+				},
+				{
+					"code": "child",
+					"valueCode": "2-1"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "2-1",
+					"display": "Trachea",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "2-2",
+					"display": "Schilddrüse",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "2-3",
+					"display": "Nebenschilddrüse",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "2-4",
+					"display": "Pharynx",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "2-5",
+					"display": "Ösophagus (cervical)",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "2-6",
+					"display": "Larynx",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "3",
+			"display": "Thorax",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "3-2"
+				},
+				{
+					"code": "child",
+					"valueCode": "3-1"
+				},
+				{
+					"code": "child",
+					"valueCode": "3-4"
+				},
+				{
+					"code": "child",
+					"valueCode": "3-5"
+				},
+				{
+					"code": "child",
+					"valueCode": "3-3"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "3-1",
+					"display": "Lunge",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "3"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-1-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-1-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "3-1-1",
+							"display": "Bronchien",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "3-1-2",
+							"display": "Pleura",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "3-2",
+					"display": "Mediastinum",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "3"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "3-3",
+					"display": "Herz",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "3"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-3-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-3-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-3-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "3-3-1",
+							"display": "Myocard",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "3-3-2",
+							"display": "Klappen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "3-3-3",
+							"display": "Reizleitungssystem",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "3-4",
+					"display": "Ösophagus (thoracal)",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "3"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "3-5",
+					"display": "Thoraxwand",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "3"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-5-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-5-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "3-5-3"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "3-5-1",
+							"display": "Knöcherner Thorax",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "3-5-2",
+							"display": "Sternum",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "3-5-3",
+							"display": "Rippen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "3-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "4",
+			"display": "Abdomen",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "4-5"
+				},
+				{
+					"code": "child",
+					"valueCode": "4-4"
+				},
+				{
+					"code": "child",
+					"valueCode": "4-6"
+				},
+				{
+					"code": "child",
+					"valueCode": "4-7"
+				},
+				{
+					"code": "child",
+					"valueCode": "4-1"
+				},
+				{
+					"code": "child",
+					"valueCode": "4-3"
+				},
+				{
+					"code": "child",
+					"valueCode": "4-2"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "4-1",
+					"display": "Oberbauch",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-1-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-1-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "4-1-1",
+							"display": "Leber / Milz",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-1-1-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-1-1-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-1-1-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "4-1-1-1",
+									"display": "Gallenblase / Gallengang",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "4-1-1-2",
+									"display": "Leber",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "4-1-1-3",
+									"display": "Milz",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "4-1-2",
+							"display": "Pankreas",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-1-2-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "4-1-2-1",
+									"display": "Pankreasgang",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-1-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "4-2",
+					"display": "Darmtrakt",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-2-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-2-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-2-2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "4-2-1",
+							"display": "Magen / Duodenum",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-2-2",
+							"display": "Dünndam",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-2-3",
+							"display": "Dickdarm",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-2-3-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-2-3-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "4-2-3-1",
+									"display": "Appendix",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-2-3"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "4-2-3-2",
+									"display": "Rektum",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-2-3"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "4-3",
+					"display": "Nebennieren",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "4-4",
+					"display": "Harntrakt",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-4-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-4-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-4-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-4-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-4-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "4-4-1",
+							"display": "Nieren",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "4-4-1-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "4-4-1-1",
+									"display": "Nierenbecken",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "4-4-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "4-4-2",
+							"display": "Ureter",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-4"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-4-3",
+							"display": "Harnblase",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-4"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-4-4",
+							"display": "Urethra",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-4"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-4-5",
+							"display": "NTX",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-4"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "4-5",
+					"display": "Becken / Unterbauch",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-7"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-8"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-6"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "4-5-2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "4-5-1",
+							"display": "Uterus",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-2",
+							"display": "Tuben",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-3",
+							"display": "Ovar",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-4",
+							"display": "Schwangerschaft",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-5",
+							"display": "Prostata",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-6",
+							"display": "Scrotum /Hoden",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-7",
+							"display": "Penis / Corpus Cavernosum",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "4-5-8",
+							"display": "knöchernes Becken",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "4-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "4-6",
+					"display": "Bauchdecke",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				},
+				{
+					"code": "4-7",
+					"display": "Retroperitoneum",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "4"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "5",
+			"display": "Muskulo-Skelettal",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "5-2"
+				},
+				{
+					"code": "child",
+					"valueCode": "5-3"
+				},
+				{
+					"code": "child",
+					"valueCode": "5-1"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "5-1",
+					"display": "Arm (gesamt)",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "5"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-7"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-6"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-1-2"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "5-1-1",
+							"display": "Schulter",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-1-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-1-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-1-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-1-4"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "5-1-1-1",
+									"display": "Schulterblatt",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-1-1-2",
+									"display": "Clavicula",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-1-1-3",
+									"display": "Sternoclaviculargelenk",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-1-1-4",
+									"display": "Acromio-Claviculargelenk",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "5-1-2",
+							"display": "Axilla",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-1-3",
+							"display": "Oberarm",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-1-4",
+							"display": "Ellenbogen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-1-5",
+							"display": "Unterarm",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-1-6",
+							"display": "DEPRECATED: Handwurzel",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "retired"
+								},
+								{
+									"code": "hints",
+									"valueString": "DEPRECATED: nicht mehr verwenden"
+								}
+							]
+						},
+						{
+							"code": "5-1-7",
+							"display": "Hand",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-7-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-7-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-7-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-1-7-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "5-1-7-1",
+									"display": "Finger",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-1-7-2",
+									"display": "Handgelenk",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-1-7-3",
+									"display": "Mittelhand",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-1-7-4",
+									"display": "Handwurzel",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-1-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "5-2",
+					"display": "Bein (gesamt)",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "5"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-6"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-7"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-2-5"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "5-2-1",
+							"display": "Hüfte",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-2-2",
+							"display": "Inguinal Region",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-2-3",
+							"display": "Oberschenkel",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-2-4",
+							"display": "Knie",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-4-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "5-2-4-1",
+									"display": "Patella",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-4"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "5-2-5",
+							"display": "Unterschenkel",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-2-6",
+							"display": "Sprunggelenk",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-2-7",
+							"display": "Fuß",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-7-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-7-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-7-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-7-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-7-6"
+								},
+								{
+									"code": "child",
+									"valueCode": "5-2-7-5"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "5-2-7-1",
+									"display": "Zehe",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-2-7-2",
+									"display": "Fersenbein",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-2-7-3",
+									"display": "Mittelfuß",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-2-7-4",
+									"display": "Fußwurzel",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-2-7-5",
+									"display": "Achillessehne",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "5-2-7-6",
+									"display": "Vorfuß",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "5-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "5-3",
+					"display": "Wirbelsäule",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "5"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-3-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-3-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-3-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-3-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "5-3-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "5-3-1",
+							"display": "Halswirbelsäule",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-3-2",
+							"display": "Brustwirbelsäule",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-3-3",
+							"display": "Lendenwirbelsäule",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-3-4",
+							"display": "Kreuz / Steißbein / Sacro-Iliacalgelenke",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "5-3-5",
+							"display": "Gesamtaufnahme der Wirbelsäule",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "5-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "6",
+			"display": "Gefäßsystem",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "6-1"
+				},
+				{
+					"code": "child",
+					"valueCode": "6-3"
+				},
+				{
+					"code": "child",
+					"valueCode": "6-2"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "6-1",
+					"display": "Gefäße arteriell",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "6"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-1-1"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-1-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-1-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-1-4"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "6-1-1",
+							"display": "intrakraniell",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-1-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-1-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-1-5"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-1-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-1-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "6-1-1-1",
+									"display": "A. cerebri anterior",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-1-2",
+									"display": "A.cerebri media",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-1-3",
+									"display": "A. cerebri posterior",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-1-4",
+									"display": "A basilaris",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-1-5",
+									"display": "Circulus arteriosus",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-1"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "6-1-2",
+							"display": "Aorta",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-2-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-2-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "6-1-2-1",
+									"display": "thorakal",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-2-2",
+									"display": "abdominal",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "6-1-3",
+							"display": "Aortenäste",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-7"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-5"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-1-3-6"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "6-1-3-1",
+									"display": "Hals (Carotis / Vertebralis)",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-1-2"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-1-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-1-1"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-1-4"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									],
+									"concept": [
+										{
+											"code": "6-1-3-1-1",
+											"display": "Carotis",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-1"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-1-2",
+											"display": "Carotis externa",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-1"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-1-3",
+											"display": "Carotis interna",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-1"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-1-4",
+											"display": "Vertebralis",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-1"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										}
+									]
+								},
+								{
+									"code": "6-1-3-2",
+									"display": "Coronarien",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-3-3",
+									"display": "Pulmonalgefäße",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-3-4",
+									"display": "visceral",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-4-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-4-4"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-4-1"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-4-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									],
+									"concept": [
+										{
+											"code": "6-1-3-4-1",
+											"display": "Truncus coeliacus",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-4"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-4-2",
+											"display": "A. mesenterica superior",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-4"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-4-3",
+											"display": "A. mesenterica inferior",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-4"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-4-4",
+											"display": "A. spinalis",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-4"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										}
+									]
+								},
+								{
+									"code": "6-1-3-5",
+									"display": "Nierenarterien",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-1-3-6",
+									"display": "Armarterien",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-6-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-6-4"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-6-1"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-6-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									],
+									"concept": [
+										{
+											"code": "6-1-3-6-1",
+											"display": "Subclavia / Truncus Brachiocephalicus",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-6"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-6-2",
+											"display": "Oberarm",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-6"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-6-3",
+											"display": "Unterarm",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-6"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-6-4",
+											"display": "Hand",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-6"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										}
+									]
+								},
+								{
+									"code": "6-1-3-7",
+									"display": "Beinarterien",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-1-3"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-7-1"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-7-4"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-7-2"
+										},
+										{
+											"code": "child",
+											"valueCode": "6-1-3-7-3"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									],
+									"concept": [
+										{
+											"code": "6-1-3-7-1",
+											"display": "Iliaca",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-7"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-7-2",
+											"display": "Oberschenkel",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-7"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-7-3",
+											"display": "Unterschenkel",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-7"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										},
+										{
+											"code": "6-1-3-7-4",
+											"display": "Fuß",
+											"property": [
+												{
+													"code": "parent",
+													"valueCode": "6-1-3-7"
+												},
+												{
+													"code": "status",
+													"valueCode": "active"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "6-1-4",
+							"display": "Dialyseshunt",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "6-2",
+					"display": "Gefäße venös",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "6"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-6"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-9"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-8"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-7"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-10"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-2-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "6-2-1",
+							"display": "Sinus cerebrales",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-2-10",
+							"display": "viszerale Venen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-2-2",
+							"display": "Armvenen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-2-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-2-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-2-1"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-2-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "6-2-2-1",
+									"display": "Subclavia",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-2-2-2",
+									"display": "Oberarm",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-2-2-3",
+									"display": "Unterarm",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-2-2-4",
+									"display": "Hand",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-2"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "6-2-3",
+							"display": "Cava superior",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-2-4",
+							"display": "Cava inferior",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-2-5",
+							"display": "Lebervenen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-2-6",
+							"display": "Nierenvenen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-6-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "6-2-6-1",
+									"display": "V. spermatica / ovarica",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-6"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "6-2-7",
+							"display": "Beinvenen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-7-3"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-7-4"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-7-2"
+								},
+								{
+									"code": "child",
+									"valueCode": "6-2-7-1"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							],
+							"concept": [
+								{
+									"code": "6-2-7-1",
+									"display": "Iliaca / Bein",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-2-7-2",
+									"display": "Oberschenkel",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-2-7-3",
+									"display": "Unterschenkel",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								},
+								{
+									"code": "6-2-7-4",
+									"display": "Fuß",
+									"property": [
+										{
+											"code": "parent",
+											"valueCode": "6-2-7"
+										},
+										{
+											"code": "status",
+											"valueCode": "active"
+										}
+									]
+								}
+							]
+						},
+						{
+							"code": "6-2-8",
+							"display": "V. jugularis",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-2-9",
+							"display": "Pfortader",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-2"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				},
+				{
+					"code": "6-3",
+					"display": "Lymphgefäße und Lymphknoten",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "6"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-6"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-4"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-7"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-5"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-3"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-2"
+						},
+						{
+							"code": "child",
+							"valueCode": "6-3-1"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					],
+					"concept": [
+						{
+							"code": "6-3-1",
+							"display": "Ganzkörper",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-3-2",
+							"display": "Kopf",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-3-3",
+							"display": "Hals",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-3-4",
+							"display": "Thorax",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-3-5",
+							"display": "Abdomen",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-3-6",
+							"display": "Arm",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						},
+						{
+							"code": "6-3-7",
+							"display": "Bein",
+							"property": [
+								{
+									"code": "parent",
+									"valueCode": "6-3"
+								},
+								{
+									"code": "status",
+									"valueCode": "active"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "7",
+			"display": "Mamma",
+			"property": [
+				{
+					"code": "child",
+					"valueCode": "7-1"
+				},
+				{
+					"code": "status",
+					"valueCode": "active"
+				}
+			],
+			"concept": [
+				{
+					"code": "7-1",
+					"display": "Milchgang",
+					"property": [
+						{
+							"code": "parent",
+							"valueCode": "7"
+						},
+						{
+							"code": "status",
+							"valueCode": "active"
+						}
+					]
+				}
+			]
+		}
+	]
+}

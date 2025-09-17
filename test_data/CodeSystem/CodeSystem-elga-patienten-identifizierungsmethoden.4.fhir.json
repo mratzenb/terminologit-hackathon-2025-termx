@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "elga-patienten-identifizierungsmethoden",
+  "url": "https://termgit.elga.gv.at/CodeSystem/elga-patienten-identifizierungsmethoden",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.40.0.34.5.162"
+    }
+  ],
+  "version": "1.2.0",
+  "name": "elga-patienten-identifizierungsmethoden",
+  "title": "ELGA_Patienten-Identifizierungsmethoden",
+  "status": "active",
+  "date": "2024-08-20",
+  "publisher": "ELGA GmbH",
+  "contact": [
+    {
+      "name": "https://www.elga.gv.at",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.elga.gv.at"
+        }
+      ]
+    }
+  ],
+  "description": "ELGA-Codeliste f\u00fcr Identifizierungsmethoden von Patienten",
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "PIM101",
+      "display": "e-card wurde in den Kartenleser gesteckt"
+    },
+    {
+      "code": "PIM102",
+      "display": "B\u00fcrgerkarte wurde in den Kartenleser gesteckt"
+    },
+    {
+      "code": "PIM103",
+      "display": "\u00dcber lokalen Patientenindex identifiziert"
+    },
+    {
+      "code": "PIM104",
+      "display": "Patient ist identifiziert via e-card System ohne gesteckte e-card"
+    },
+    {
+      "code": "PIM105",
+      "display": "Identifikation anhand amtlichen Lichtbildausweis oder e-card f\u00fcr mobile e-Impfpass Anwendung"
+    },
+    {
+      "code": "PIM106",
+      "display": "Zuweisung"
+    }
+  ]
+}
